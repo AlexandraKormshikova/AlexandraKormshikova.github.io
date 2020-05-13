@@ -489,9 +489,10 @@ h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 55%;
+    width: 50%;
     height: auto;
 }
+
 .about_images_item{
     border: .1px solid $golden_color;
     width: 33%;
@@ -501,7 +502,6 @@ h3 {
     flex-direction: column;
     justify-content: space-between;
     z-index: 19;
-    padding: 18px;
 
     h3{
         font-family: sans-serif;
@@ -532,6 +532,12 @@ h3 {
         line-height: 14px;
         text-align: center;
         color: #000000;
+    }
+}
+
+.about_images{
+    .about_images_item_img{
+
     }
 }
 
@@ -604,8 +610,8 @@ footer{
             height: auto;
             padding: 25px 15px;
         }
-        .about_image{
-            padding: 0;
+        .about_images_item.about_images{
+            width: 100%;
         }
         .third_block_square{
             width: 50%;

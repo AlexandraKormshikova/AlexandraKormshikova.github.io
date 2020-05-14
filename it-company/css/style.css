@@ -419,9 +419,9 @@ a:hover {
     .two_block_services .service_image {
       width: 40px; }
   .service {
-    width: 100%;
+    width: 95%;
     height: auto;
-    margin: 15px 0; }
+    margin: 15px auto; }
   .three_block_main {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

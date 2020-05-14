@@ -271,6 +271,43 @@ h3 {
     max-width: 100%;
     height: auto; }
 
+/* THIRD BLOCK */
+.three_block {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f8;
+  padding: 12vh 0; }
+
+.three_block_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.three_block_main_text {
+  width: 54%;
+  height: auto; }
+  .three_block_main_text p {
+    margin: 35px 0; }
+  .three_block_main_text a {
+    color: #4985ff;
+    text-decoration: underline; }
+
+.three_block_main_image {
+  width: 44%;
+  height: auto; }
+  .three_block_main_image img {
+    max-width: 100%;
+    height: auto; }
+
+a:hover {
+  text-decoration: none; }
+
 @media (max-width: 890px) {
   h1 {
     font-size: 30px;
@@ -354,7 +391,17 @@ h3 {
   .service {
     width: 100%;
     height: auto;
-    margin: 15px 0; } }
+    margin: 15px 0; }
+  .three_block_main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .three_block_main .three_block_main_text {
+      width: 90%; }
+    .three_block_main .three_block_main_image {
+      width: 75%;
+      margin-top: 6vh; } }
 
 @media (max-width: 420px) {
   h1 {

@@ -134,6 +134,7 @@ h1{
     text-align: center;
     display: inline-block;
     max-width: 800px;
+    margin-bottom: 6vh;
 }
 
 .intro_button{
@@ -145,11 +146,84 @@ h1{
     font-size: 16px;
     line-height: 20px;
     text-align: center;
-    margin-top: 6vh;
 
     color: #FFFFFF;
     background-color: #4985ff;
 }
+
+
+/* SECOND BLOCK */
+
+.two_block{
+    width: 100%;
+    height: auto;
+}
+
+.two_block_main{
+    margin: 11vh 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    max-width: 740px;
+    margin-bottom: 6.5vh;
+
+    color: #323232;
+}
+
+.h2_subtitle{
+    text-align: center;
+    max-width: 730px;
+}
+
+.two_block_services{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 9vh 0 7vh;
+}
+
+.service{
+    width: 31%;
+    height: auto;
+    display: flex;
+    margin: 10px 0;
+}
+
+h3{
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+}
+
+.services_main{
+    width: 76%;
+    margin-left: 15px;
+}
+
+.service_image{
+    width: 24%;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
 
 
 
@@ -165,11 +239,16 @@ h1{
 
 
 @media(max-width: 890px){
-    h1{
+    h1{ // -8px font size
         font-size: 30px;
         line-height: 44px;
         width: 90%;
     }
+    h2{
+        font-size: 28px;
+        line-height: 32px;
+    }
+
 }
 
 @media(max-width: 640px){
@@ -231,14 +310,42 @@ h1{
     .header__burger_menu.active{
         display: block;
     }
+    .two_block_services{
+        flex-direction: column;
+        .services_main{
+            width: 86%;
+        }
+        .service_image{
+            width: 40px;
+        }
+    }
+    .service{
+        width: 100%;
+        height: auto;
+        margin: 15px 0;
+    }
 }
 
 @media(max-width: 420px){
-    h1{
+    h1{ //-7px font-size
         font-size: 23px;
         line-height: 30px;
     }
-    p{
+    h2{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 5px;
+    }
+    p{ //-4px
         font-size: 12px;
+        line-height: 15px;
+    }
+    .intro_button{
+        height: 5px 10px;
+        font-size: 14px;
     }
 }

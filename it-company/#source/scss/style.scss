@@ -72,6 +72,7 @@ body{
         color: #fff;
         display: inline-block;
         vertical-align: top;
+        text-decoration: none;
         &:after{
             content: '';
             display: block;
@@ -245,10 +246,11 @@ h3{
     p{
         margin: 35px 0;
     }
-    a{
-        color: #4985ff;
-        text-decoration: underline;
-    }
+}
+
+a{
+    color: #4985ff;
+    text-decoration: underline;
 }
 
 .three_block_main_image{
@@ -304,12 +306,70 @@ a:hover{
 }
 
 
+/* FOUR BLOCK */
 
+.four_block{
+    width: 100%;
+    height: auto;
+    padding-top: 14vh;
+    position: relative;
+    h2{
+        text-align: left;
+        color: #fff;
+        width: 65%;
+    }
 
+}
 
+.four_bg{
+    width: 100%;
+    height: 50vh;
+    background-color: #504DC2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
+.four_block_main_title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.four_block_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.four_block_works{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.works_item{
+    width: 31%;
+    height: auto;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    h3{
+        margin: 4vh 0;
+        max-width: 600px;
+    }
+    a{
+        display: inline-block;
+        margin-top: 4vh;
+    }
+}
+
+.blue{
+    color: #4985ff;
+}
 
 
 
@@ -423,6 +483,29 @@ a:hover{
     }
     .our_projects_item2{
         width: 100%;
+    }
+
+
+
+    .four_block_main_title{
+        flex-direction: column;
+        margin-bottom: 6vh;
+        h2{
+            width: 80%;
+            text-align: center;
+        }
+    }
+    .four_block_works{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .works_item{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 4vh 0;
     }
 }
 

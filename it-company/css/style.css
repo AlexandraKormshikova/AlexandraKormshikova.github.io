@@ -108,7 +108,8 @@ body {
     position: relative;
     color: #fff;
     display: inline-block;
-    vertical-align: top; }
+    vertical-align: top;
+    text-decoration: none; }
     .header_nav a:after {
       content: '';
       display: block;
@@ -278,9 +279,10 @@ h3 {
   height: auto; }
   .three_block_main_text p {
     margin: 35px 0; }
-  .three_block_main_text a {
-    color: #4985ff;
-    text-decoration: underline; }
+
+a {
+  color: #4985ff;
+  text-decoration: underline; }
 
 .three_block_main_image {
   width: 44%;
@@ -335,6 +337,73 @@ a:hover {
   content: url(../img/number_pr.svg);
   margin-right: 15px;
   vertical-align: middle; }
+
+/* FOUR BLOCK */
+.four_block {
+  width: 100%;
+  height: auto;
+  padding-top: 14vh;
+  position: relative; }
+  .four_block h2 {
+    text-align: left;
+    color: #fff;
+    width: 65%; }
+
+.four_bg {
+  width: 100%;
+  height: 50vh;
+  background-color: #504DC2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+.four_block_main_title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.four_block_main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.four_block_works {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.works_item {
+  width: 31%;
+  height: auto; }
+  .works_item img {
+    max-width: 100%;
+    height: auto; }
+  .works_item h3 {
+    margin: 4vh 0;
+    max-width: 600px; }
+  .works_item a {
+    display: inline-block;
+    margin-top: 4vh; }
+
+.blue {
+  color: #4985ff; }
 
 @media (max-width: 890px) {
   h1 {
@@ -436,7 +505,36 @@ a:hover {
     width: 50%;
     margin-bottom: 10vh; }
   .our_projects_item2 {
-    width: 100%; } }
+    width: 100%; }
+  .four_block_main_title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 6vh; }
+    .four_block_main_title h2 {
+      width: 80%;
+      text-align: center; }
+  .four_block_works {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .works_item {
+    width: 90%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 4vh 0; } }
 
 @media (max-width: 420px) {
   h1 {

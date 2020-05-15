@@ -19,8 +19,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:inherit;}
 
 /* HEADER */
 
-//*{border: .1px solid black;}
-
 body{
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -371,6 +369,46 @@ a:hover{
     color: #4985ff;
 }
 
+/* FIVE BLOCK */
+
+.five_block{
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f8;
+    padding: 14vh 0;
+}
+
+.five_main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    P{
+        max-width: 730px;
+    }
+}
+
+.five_images{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+
+.five_images_item{
+    width: 24%;
+    height: auto;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
 
 
 
@@ -388,6 +426,12 @@ a:hover{
         width: 100%;
     }
 
+    .five_images_item{
+        width: 49%;
+        height: auto;
+        margin: 3vh 0;
+        text-align: center;
+    }
 
 }
 
@@ -534,6 +578,17 @@ a:hover{
 
     .our_projects_item{
         width: 100%;
+    }
+
+
+    .five_images_item{
+        width: 100%;
+        height: auto;
+        margin: 3vh 0;
+        text-align: center;
+    }
+    .five_images_item:first-child{
+        margin-top: 0;
     }
 }
 

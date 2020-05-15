@@ -405,6 +405,50 @@ a:hover {
 .blue {
   color: #4985ff; }
 
+/* FIVE BLOCK */
+.five_block {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f8;
+  padding: 14vh 0; }
+
+.five_main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .five_main P {
+    max-width: 730px; }
+
+.five_images {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 7vh; }
+
+.five_images_item {
+  width: 24%;
+  height: auto; }
+  .five_images_item img {
+    max-width: 100%;
+    height: auto; }
+
 @media (max-width: 890px) {
   h1 {
     font-size: 30px;
@@ -414,7 +458,12 @@ a:hover {
     font-size: 28px;
     line-height: 32px; }
   .our_projects {
-    width: 100%; } }
+    width: 100%; }
+  .five_images_item {
+    width: 49%;
+    height: auto;
+    margin: 3vh 0;
+    text-align: center; } }
 
 @media (max-width: 640px) {
   .header_line,
@@ -554,4 +603,11 @@ a:hover {
     height: 5px 10px;
     font-size: 14px; }
   .our_projects_item {
-    width: 100%; } }
+    width: 100%; }
+  .five_images_item {
+    width: 100%;
+    height: auto;
+    margin: 3vh 0;
+    text-align: center; }
+  .five_images_item:first-child {
+    margin-top: 0; } }

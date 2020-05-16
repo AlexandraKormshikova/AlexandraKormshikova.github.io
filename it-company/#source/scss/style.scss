@@ -401,10 +401,71 @@ a:hover{
     width: 24%;
     height: auto;
     img{
-        max-width: 100%;
+        width: 100%;
         height: auto;
+        transition: all .3s ease-in;
+    }
+    img:hover{
+        display: inline-block;
+        border-radius: 50%;
+        transition: all .3s ease-in;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     }
 }
+
+/* SIX BLOCK */
+
+.six_block_bg_img{
+    position: relative;
+    width: 100%;
+    height: 68vh;
+    background: url(../img/first_block_bg.png) no-repeat center top / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        color: #fff;
+        margin: 10vh 0 2vh;
+    }
+    p{
+        margin: 0;
+        color: #fff;
+        margin-bottom: 5vh;
+    }
+}
+
+.ew{
+    max-width: 100%;
+    height: auto;
+}
+
+.d{
+    content: '';
+    height: 13vh;
+    width: 18%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 41%;
+    top: 360px;
+}
+
+.s{
+    content: '';
+    height: 70px;
+    width: 70px;
+    background-color: rgba(0,0,0,0.01);
+    border-radius: 50px;
+    border: 1px solid #fff;
+    position: absolute;
+    left: 17px;
+    top: 12px;
+}
+
+
+
 
 
 
@@ -431,6 +492,13 @@ a:hover{
         height: auto;
         margin: 3vh 0;
         text-align: center;
+    }
+
+    .six_2{
+        padding: 0;
+        margin: 0;
+        display: inline-block;
+        box-shadow: 0 0 350px #000;
     }
 
 }
@@ -551,7 +619,14 @@ a:hover{
         align-items: center;
         margin: 4vh 0;
     }
+
+
 }
+
+
+
+
+
 
 @media(max-width: 420px){
     h1{ //-7px font-size

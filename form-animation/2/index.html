@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Make Form</title>
+</head>
+<body>
+    <h1>I Make Form</h1>
+
+    <div class="form">
+        <input type="text" name="name" value="" autocomplete="off" required />
+        <label for="name" class="label-name">
+            <span class="content-name">Your Name</span>
+        </label>
+    </div>
+
+
+    <script>
+
+var words = ["ручка", "бумажник", "пирог", "аквариум", "обезьяна", "кошка", "демогоргон"];
+var word = words[Math.floor(Math.random() * words.length)];
+
+var attemptsInput = word.length * 2;
+
+var endArray = [];
+for (var i = 0; i < word.length; i++){
+    endArray[i] = "_";
+}
+
+var remainingLetters = word.length;
+
+while (remainingLetters > 0 && attemptsInput > 0){
+    alert(endArray.join(" ")+ ", " + "Осталось попыток: "  + attemptsInput);
+
+    var guess = prompt("Угадайте букву, или нажмите Отмена для выхода из игры.").toLowerCase();
+
+
+
+    if (guess === null){
+        alert("Надо ввести одну букву");
+    }
+    else if (guess.length != 1){
+        alert("Введите только одну букву");
+    }
+    else{
+        for (var t = 0; t < word.length; t++){
+            if (word[t] === guess && endArray[t] === "_"){
+                endArray[t] = guess;
+                remainingLetters--;
+            }
+        }attemptsInput--;
+    }
+}
+
+
+alert(endArray.join(" "));
+alert("Было загадано слово " + word + "!")
+
+
+    </script>
+</body>
+</html>

@@ -164,6 +164,8 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .intro_main p {
+    margin-bottom: 3vh; }
 
 h1 {
   font-weight: 800;
@@ -190,6 +192,8 @@ h1 {
 .two_block {
   width: 100%;
   height: auto; }
+  .two_block p {
+    text-align: left; }
 
 .two_block_main {
   margin: 11vh 0;
@@ -216,7 +220,7 @@ h2 {
   margin-bottom: 6.5vh;
   color: #323232; }
 
-.h2_subtitle {
+.two_block .h2_subtitle {
   text-align: center;
   max-width: 730px; }
 
@@ -426,7 +430,8 @@ a:hover {
   -ms-flex-align: center;
   align-items: center; }
   .five_main P {
-    max-width: 730px; }
+    max-width: 730px;
+    text-align: center; }
 
 .five_images {
   width: 100%;
@@ -473,6 +478,8 @@ a:hover {
   .six_bg_image h2 {
     color: #fff;
     margin-top: 7vh; }
+  .six_bg_image p {
+    text-align: center; }
 
 .six_main {
   width: 100%;
@@ -498,9 +505,6 @@ a:hover {
   .six_picture img {
     max-width: 100%;
     height: auto; }
-
-p {
-  text-align: center; }
 
 .oval {
   position: absolute;

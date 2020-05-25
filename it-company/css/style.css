@@ -886,4 +886,6 @@ footer {
 @media (max-width: 255px) {
   h2 {
     font-size: 15px;
-    text-align: center; } }
+    text-align: center; }
+  .container {
+    padding: 0; } }

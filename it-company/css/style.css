@@ -835,7 +835,9 @@ footer {
   .form {
     width: 95%; }
   .content-name {
-    font-size: 14px; } }
+    font-size: 14px; }
+  p, h2, h3 {
+    text-align: center !important; } }
 
 @media (max-width: 420px) {
   h1 {

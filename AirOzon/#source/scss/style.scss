@@ -23,8 +23,34 @@ h1{
     text-transform: uppercase;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 55px;
-    line-height: 7vh;
+    //font-size: 55px;
+    line-height: 1.2em;
+    font-size: calc(25px + 30*(100vw / 1920));
+    padding-bottom: 1vh;
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    line-height: 72px;
+    font-size: 36px;
+    color: #040404;
+    font-weight: 700;
+    position: relative;
+    padding-left: 68px;
+    span{
+        color: $blue;
+    }
+}
+
+h2:before{
+    position: absolute;
+    content: '';
+    background-color: $blue;
+    width: 54px;
+    height: 1px;
+    left: 0;
+    bottom: 50%;
 }
 
 body{
@@ -34,7 +60,7 @@ body{
 
 .container{
     max-width: 1115px;
-    padding: 0 5px;
+    padding: 0 7px;
     margin: 0 auto;
 }
 
@@ -42,7 +68,7 @@ body{
 
 header{
     width: 100%;
-    height: 9.6vh;
+    height: 5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,7 +95,8 @@ header{
 }
 .header_phone{
     color: $blue;
-    font-size: 2.4em;
+    font-size: 32px;
+    font-size: calc(20px + 12*(100vw / 1920));
     font-weight: 400;
     span{
         font-weight: 700;
@@ -81,7 +108,7 @@ header{
     align-items: center;
     border: 1px solid $blue;
     border-radius: 50px;
-    padding: 2vh 2.5vw;
+    padding: 2% 2.5vw;
     padding-left: 45px;
     position: relative;
     cursor: pointer;
@@ -107,10 +134,15 @@ header{
     width: 100%;
     height: 586px;
     color: #fff;
+    position: relative;
+    .container{
+        height: 100%;
+    }
 }
 
 .intro_text{
     position: relative;
+    padding-left: 7px;
 }
 
 .intro_text::after,
@@ -121,6 +153,7 @@ header{
     height: 45px;
     left: -30px;
     border: 25px solid #add3f5;
+    margin: 0 7px;
 }
 
 .intro_text::after{
@@ -137,23 +170,25 @@ header{
     position: absolute;
     content: '';
     width: 25px;
-    height: 90px;
+    height: 100px;
     background-color: #add3f5;
     left: -30px;
+    margin: 0 7px;
 }
 
 .h1_subtitle{
     font-size: 20px;
     font-weight: 300;
-    line-height: 3.5vh;
+    line-height: 1.4em;
     padding-left: 5px;
+    font-size: calc(16px + 4*(100vw / 1920));
 }
 
 .h1_up{
     font-weight: 100;
     text-transform: uppercase;
     line-height: 7.3vh;
-    font-size: 40px;
+    font-size: calc(20px + 20*(100vw / 1920));
 }
 
 .intro_main{
@@ -162,15 +197,28 @@ header{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 140px 73px;
+    padding-left: 3.5vw;
+    padding-bottom: 3.5vh;
 }
 
 .intro_img{
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    width: 37%;
+    height: auto;
     img{
-        position: absolute;
-        right: 15px;
-        bottom: 5px;
+        width: 100%;
+        height: auto;
     }
+}
+
+// products
+
+.products{
+    width: 100%;
+    height: auto;
+    padding: 32px 0;
 }
 
 
@@ -191,13 +239,14 @@ header{
             display: none;
         }
     }
+
+}
+
+@media(max-width: 940px){
     .intro{
         .intro_img{
-            img{
-                width: 35%;
-                bottom: 15%;
-                height: auto;
-            }
+            width: 27%;
+            height: auto;
         }
     }
 }
@@ -206,7 +255,80 @@ header{
     header{
         height: 7vh;
         .header_phone{
+            font-size: calc(15px + (100vw / 1920));
+        }
+    }
+}
+
+@media(max-width: 640px){
+    header{
+        height: 5vh;
+    }
+    .intro{
+        padding-top: 20px;
+        height: 90vh;
+        padding-left: 15px;
+        .intro_main{
+            flex-direction: column;
+            justify-content: space-around;
+            .intro_img{
+                max-width: 300px;
+                position: static;
+            }
+        }
+        .intro_img{
+            width: 90%;
+        }
+    }
+}
+
+@media(max-width: 460px){
+    header{
+        .header_phone{
             display: none;
         }
+    }
+    .intro{
+        padding-top: 50px;
+        h1{
+            font-size: calc(25px + 6*(100vw / 1920));
+            padding: 15px 0;
+        }
+        .h1_up{
+            font-size: calc(14px + 6*(100vw / 1920));
+            line-height: normal;
+            padding-bottom: 10px;
+        }
+        .h1_subtitle{
+            font-size: calc(13px + 6*(100vw / 1920));
+            line-height: 1.1em;
+        }
+        .intro_text::after,
+        .intro_text::before{
+            position: absolute;
+            content: '';
+            width: 105%;
+            height: 35px;
+            left: -30px;
+            border: 20px solid #add3f5;
+            margin: 0 7px;
+        }
+        .intro_text::before{
+            border-bottom: 0;
+        }
+        .intro_text::after{
+            border-top: 0;
+            bottom: -40px;
+        }
+        .h1_subtitle::before{
+            position: absolute;
+            content: '';
+            width: 20px;
+            height: 80px;
+            background-color: #add3f5;
+            left: -30px;
+            margin: 0 7px;
+        }
+
     }
 }

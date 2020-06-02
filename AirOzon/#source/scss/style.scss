@@ -57,6 +57,7 @@ h2:before{
 body{
     font-family: "Roboto", sans-serif;;
     font-weight: 400;
+    font-size: calc(12px + 2*(100vw / 1920));
 }
 
 .container{
@@ -219,27 +220,31 @@ header{
 .products{
     width: 100%;
     height: auto;
-    padding: 32px 0;
+    padding: 3.5vh 0;
 }
 .products_item{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 48.5%;
+    width: 532px;
     height: auto;
+    margin-bottom: 25px;
 }
 
 .products_body{
     display: flex;
-    margin: 27px 0;
+    margin: 3vh 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .products_item_img{
+    z-index: 5;
     height: 250px;
-    width: 41%;
+    width: 225px;
     background-color: #fff;
     border: 1px solid $blue;
-    box-shadow: 0 0 60px rgba(0,0,0,0.4);
+    box-shadow: 0 0 70px rgba(0,0,0,0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,16 +255,18 @@ header{
 }
 
 .products_item_text{
-    width: 59%;
+    position: relative;
+    width: 315px;
     height: auto;
-    padding: 40px 5px 40px 30px;
+    padding: 40px 5px 10px 30px;
     background-color: #fff;
-    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    box-shadow: 0 0 60px rgba(0,0,0,0.2);
     .products_item_title{
         font-weight: 500;
         font-size: 22px;
+        font-size: calc(18px + 4*(100vw / 1920));
         color: $blue;
-        margin-bottom: 0.7em;
+        margin-bottom: 0.6em;
     }
     p{
         line-height: 1.4em;
@@ -274,6 +281,88 @@ header{
         width: 2px;
         left: 0;
     }
+
+    .butt_wrap{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    button{
+        height: auto;
+        padding: 5px 5px 5px 15px;
+        background-color: #fff;
+        border: 1px solid $blue;
+        color: #000;
+        font-size: 16px;
+        border-radius: 50px;
+        text-decoration: underline;
+        margin-right: 1%;
+        margin-top: 15px;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .arrow{
+        height: 25px;
+        width: 25px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 15px;
+        background-color: $blue;
+        position: relative;
+    }
+
+    .arrow:before{
+        position: absolute;
+        content: '';
+        background-color: #fff;
+        height: 2px;
+        width: 11px;
+        bottom: 12px;
+        right: 7px;
+    }
+
+    .arrow:after{
+        position: absolute;
+        content: '';
+        border: 2px solid #fff;
+        height: 8px;
+        width: 8px;
+        transform: rotate(45deg);
+        border-bottom: 0;
+        border-left: 0;
+        top: 8px;
+        right: 6px;
+    }
+    button:hover{
+        background-color: $blue;
+        color: #fff;
+    }
+    button:hover .arrow{
+        background-color: #fff;
+    }
+
+    button:hover .arrow:after{
+        border: 2px solid $blue;
+        border-bottom: 0;
+        border-left: 0;
+    }
+    button:hover .arrow:before{
+        background-color: $blue;
+    }
+}
+
+.products_item_text:after{
+    position: absolute;
+    content: '';
+    height: 45px;
+    width: 4px;
+    background-color: $blue;
+    right: 0;
+    top: 0;
 }
 
 .price_circle_wrap{
@@ -317,7 +406,26 @@ header{
 
 
 
-
+@media(max-width: 1165px){
+    .products_body{
+        justify-content: space-around;
+        .products_item{
+            width: 50%;
+            height: auto;
+            flex-direction: column;
+            .products_item_img{
+                width: 40vw;
+                min-width: 320px;
+                img{
+                    max-width: 210px;
+                }
+            }
+            .products_item_text{
+                max-width: 340px;
+            }
+        }
+    }
+}
 
 @media(max-width: 1125px){
     header{
@@ -346,7 +454,7 @@ header{
     }
 }
 
-@media(max-width: 640px){
+@media(max-width: 660px){
     header{
         height: 5vh;
     }
@@ -364,6 +472,12 @@ header{
         }
         .intro_img{
             width: 80%;
+        }
+    }
+    .products_body{
+        .products_item{
+            width: 90%;
+
         }
     }
 }
@@ -416,5 +530,24 @@ header{
             margin: 0 7px;
         }
 
+    }
+    h2{
+        font-size: calc(20px + 13*(100vw / 1920));
+        padding-left: 12vw;
+    }
+    h2:before{
+        width: 10vw;
+    }
+    .products_body{
+        .products_item{
+            .products_item_img{
+                width: 98% !important;
+                min-width: 0px;
+            }
+            .products_item_text{
+                width: 98%;
+                padding: 20px 15px;
+            }
+        }
     }
 }

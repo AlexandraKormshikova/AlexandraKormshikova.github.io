@@ -34,6 +34,7 @@ h2{
     text-transform: uppercase;
     line-height: 72px;
     font-size: 36px;
+    font-size: calc(23px + 13*(100vw / 1920));
     color: #040404;
     font-weight: 700;
     position: relative;
@@ -220,6 +221,91 @@ header{
     height: auto;
     padding: 32px 0;
 }
+.products_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48.5%;
+    height: auto;
+}
+
+.products_body{
+    display: flex;
+    margin: 27px 0;
+}
+
+.products_item_img{
+    height: 250px;
+    width: 41%;
+    background-color: #fff;
+    border: 1px solid $blue;
+    box-shadow: 0 0 60px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    img{
+        width: 85%;
+    }
+}
+
+.products_item_text{
+    width: 59%;
+    height: auto;
+    padding: 40px 5px 40px 30px;
+    background-color: #fff;
+    box-shadow: 0 0 60px rgba(0,0,0,0.3);
+    .products_item_title{
+        font-weight: 500;
+        font-size: 22px;
+        color: $blue;
+        margin-bottom: 0.7em;
+    }
+    p{
+        line-height: 1.4em;
+        padding-left: 13px;
+        position: relative;
+    }
+    p:before{
+        position: absolute;
+        content: '';
+        background-color: $blue;
+        height: 17px;
+        width: 2px;
+        left: 0;
+    }
+}
+
+.price_circle_wrap{
+    position: absolute;
+    border-radius: 50%;
+    width: 77px;
+    height: 77px;
+    border: 4px solid $blue;
+    right: 10px;
+    bottom: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .price_circle{
+        background-color: $blue;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        font-family: "PFDinDisplayPro";
+        font-weight: 500;
+        font-size: 22px;
+    }
+}
+
+
+
+
 
 
 
@@ -277,7 +363,7 @@ header{
             }
         }
         .intro_img{
-            width: 90%;
+            width: 80%;
         }
     }
 }
@@ -291,17 +377,17 @@ header{
     .intro{
         padding-top: 50px;
         h1{
-            font-size: calc(25px + 6*(100vw / 1920));
+            font-size: calc(26px + 7*(100vw / 1920));
             padding: 15px 0;
         }
         .h1_up{
-            font-size: calc(14px + 6*(100vw / 1920));
+            font-size: calc(14px + 7*(100vw / 1920));
             line-height: normal;
             padding-bottom: 10px;
         }
         .h1_subtitle{
             font-size: calc(13px + 6*(100vw / 1920));
-            line-height: 1.1em;
+            line-height: 1.2em;
         }
         .intro_text::after,
         .intro_text::before{

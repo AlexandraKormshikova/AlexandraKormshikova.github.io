@@ -233,7 +233,7 @@ header{
 
 .products_body{
     display: flex;
-    margin: 3vh 0;
+    margin-top: 3vh;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -392,6 +392,105 @@ header{
     }
 }
 
+.look_wrap{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    button{
+        border: 1px solid $blue;
+        border-radius: 50px;
+        padding: 14px 55px;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        background-color: #fff;
+    }
+    button:before{
+        content: '';
+        position: absolute;
+        background-color: $blue;
+        height: 45px;
+        width: 45px;
+        left: -9px;
+        top: 1px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px #fff;
+    }
+    button:after{
+        content: '';
+        position: absolute;
+        border: 2px solid #fff;
+        border-bottom: 0;
+        border-left: 0;
+        height: 12px;
+        width: 12px;
+        left: 5px;
+        top: 16.5px;
+        transform: rotate(45deg);
+    }
+}
+
+/* advantages */
+
+.adv{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.adv:before{
+    position: absolute;
+    content: '';
+    background-color: $blue;
+    height: 180px;
+    width: 560px;
+    transform: rotate(29deg);
+    left: -100px;
+    bottom: -95px;
+    z-index: -2;
+}
+
+.advantages_body{
+    display: flex;
+    justify-content: space-around;
+    margin: 4.5vh 0;
+}
+
+.adv_img_wrap{
+    width: 15%;
+    height: auto;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* doubt */
+
+.doubt{
+    width: 100%;
+    height: 554px;
+    background: url(../images/img/doubt_bg.png) no-repeat center top/cover;
+}
+
+
+
+
+
+
+/* reviews */
+
+.reviews{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews_item{
+    width: 24%;
+    height: auto;
+    border: 1px solid #000;
+}
 
 
 
@@ -405,6 +504,18 @@ header{
 
 
 
+
+
+
+
+
+
+
+@media(max-width: 1400px){
+    .adv:before{
+        display: none;
+    }
+}
 
 @media(max-width: 1165px){
     .products_body{
@@ -480,6 +591,13 @@ header{
 
         }
     }
+    .advantages_body{
+        flex-wrap: wrap;
+    }
+    .adv_img_wrap{
+        width: 40%;
+        margin-top: 2vh;
+    }
 }
 
 @media(max-width: 460px){
@@ -532,7 +650,7 @@ header{
 
     }
     h2{
-        font-size: calc(20px + 13*(100vw / 1920));
+        font-size: calc(18px + 13*(100vw / 1920));
         padding-left: 12vw;
     }
     h2:before{

@@ -274,7 +274,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 3vh 0;
+  margin-top: 3vh;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -446,6 +446,102 @@ header {
     font-weight: 500;
     font-size: 22px; }
 
+.look_wrap {
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .look_wrap button {
+    border: 1px solid #4a76a8;
+    border-radius: 50px;
+    padding: 14px 55px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff; }
+  .look_wrap button:before {
+    content: '';
+    position: absolute;
+    background-color: #4a76a8;
+    height: 45px;
+    width: 45px;
+    left: -9px;
+    top: 1px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 20px #fff;
+    box-shadow: 0 0 20px #fff; }
+  .look_wrap button:after {
+    content: '';
+    position: absolute;
+    border: 2px solid #fff;
+    border-bottom: 0;
+    border-left: 0;
+    height: 12px;
+    width: 12px;
+    left: 5px;
+    top: 16.5px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
+/* advantages */
+.adv {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden; }
+
+.adv:before {
+  position: absolute;
+  content: '';
+  background-color: #4a76a8;
+  height: 180px;
+  width: 560px;
+  -webkit-transform: rotate(29deg);
+  -ms-transform: rotate(29deg);
+  transform: rotate(29deg);
+  left: -100px;
+  bottom: -95px;
+  z-index: -2; }
+
+.advantages_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 4.5vh 0; }
+
+.adv_img_wrap {
+  width: 15%;
+  height: auto; }
+  .adv_img_wrap img {
+    width: 100%;
+    height: auto; }
+
+/* doubt */
+.doubt {
+  width: 100%;
+  height: 554px;
+  background: url(../images/img/doubt_bg.png) no-repeat center top/cover; }
+
+/* reviews */
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.reviews_item {
+  width: 24%;
+  height: auto;
+  border: 1px solid #000; }
+
+@media (max-width: 1400px) {
+  .adv:before {
+    display: none; } }
+
 @media (max-width: 1165px) {
   .products_body {
     -ms-flex-pack: distribute;
@@ -500,7 +596,13 @@ header {
     .intro .intro_img {
       width: 80%; }
   .products_body .products_item {
-    width: 90%; } }
+    width: 90%; }
+  .advantages_body {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .adv_img_wrap {
+    width: 40%;
+    margin-top: 2vh; } }
 
 @media (max-width: 460px) {
   header .header_phone {
@@ -540,7 +642,7 @@ header {
       left: -30px;
       margin: 0 7px; }
   h2 {
-    font-size: calc(20px + 13*(100vw / 1920));
+    font-size: calc(18px + 13*(100vw / 1920));
     padding-left: 12vw; }
   h2:before {
     width: 10vw; }

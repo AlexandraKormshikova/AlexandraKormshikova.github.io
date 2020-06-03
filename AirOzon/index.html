@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AirOzon</title>
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -100,13 +101,63 @@
                         <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
                     </div>
                 </div>
-
+            </div>
+            <div class="look_wrap">
+                <button type="button" name="button">Смотреть все</button>
             </div>
 
         </div>
     </div>
 
+    <!-- advantages -->
 
+    <section class="adv">
+        <div class="container">
+            <div class="advantages">
+                <h2>Преимущества <span>airozon</span></h2>
+                <div class="advantages_body">
+                    <div class="adv_img_wrap">
+                        <img src="images/img/adv1.png" alt="vff">
+                    </div>
+                    <div class="adv_img_wrap">
+                        <img src="images/img/adv2.png" alt="vff">
+                    </div>
+                    <div class="adv_img_wrap">
+                        <img src="images/img/adv3.png" alt="vff">
+                    </div>
+                    <div class="adv_img_wrap">
+                        <img src="images/img/adv4.png" alt="vff">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- doubt -->
+
+    <section class="doubt">
+
+    </section>
+
+    <div class="container">
+        <section class="reviews multiple-items">
+            <div class="reviews_item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deserunt officia ad sit id labore molestiae veritatis sunt cupiditate a magni, ipsa nesciunt, velit itaque minus, excepturi tenetur quibusdam nam?</p>
+            </div>
+            <div class="reviews_item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deserunt officia ad sit id labore molestiae veritatis sunt cupiditate a magni, ipsa nesciunt, velit itaque minus, excepturi tenetur quibusdam nam?</p>
+            </div>
+            <div class="reviews_item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deserunt officia ad sit id labore molestiae veritatis sunt cupiditate a magni, ipsa nesciunt, velit itaque minus, excepturi tenetur quibusdam nam?</p>
+            </div>
+            <div class="reviews_item">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde deserunt officia ad sit id labore molestiae veritatis sunt cupiditate a magni, ipsa nesciunt, velit itaque minus, excepturi tenetur quibusdam nam?</p>
+            </div>
+        </section>
+    </div>
+
+    
 </main>
 
 
@@ -114,7 +165,14 @@
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-
+<script type="text/javascript" src="js/slick.js"></script>
+<script>
+$('.multiple-items').slick({
+slidesToShow: 3, //сколько слайдов показывать в карусели
+slidesToScroll: 1 // сколько слайдов прокручивать за раз
+});
+</script>
 </body>
 </html>

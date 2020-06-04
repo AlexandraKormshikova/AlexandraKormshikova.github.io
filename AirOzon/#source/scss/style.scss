@@ -912,7 +912,7 @@ h4:after{
     color: $deep-blue;
     margin-bottom: 1.5vh;
     display: inline-block;
-    width: 70%;
+    width: 60%;
 }
 
 .answer_text_grey{
@@ -974,6 +974,10 @@ footer{
 .footer_icons_item:hover{
     background-color: #629fd1;
     cursor: pointer;
+}
+
+.answer_text_grey.none{
+    display: none;
 }
 
 

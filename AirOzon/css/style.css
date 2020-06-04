@@ -930,7 +930,9 @@ h4:after {
   font-size: 18px;
   font-weight: 500;
   color: #224b7a;
-  margin-bottom: 1.5vh; }
+  margin-bottom: 1.5vh;
+  display: inline-block;
+  width: 70%; }
 
 .answer_text_grey {
   background-color: #ededed;

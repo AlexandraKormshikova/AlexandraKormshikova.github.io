@@ -905,6 +905,29 @@ h4:after{
     border-radius: 50%;
     cursor: pointer;
 }
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.answer_arrow:hover{
+    box-shadow: 0 0 10px $blue;
+}
+
+.answer_arrow::before{
+    position: absolute;
+    content: '';
+    border: 2px solid #aeaeae;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+    left: 18.5px;
+    top: 18px;
+    border-bottom: 0;
+    border-left: 0;
+}
 
 .answer_title{
     font-size: 18px;
@@ -912,7 +935,7 @@ h4:after{
     color: $deep-blue;
     margin-bottom: 1.5vh;
     display: inline-block;
-    width: 60%;
+    width: 75%;
 }
 
 .answer_text_grey{

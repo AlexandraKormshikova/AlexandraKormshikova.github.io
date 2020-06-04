@@ -926,13 +926,38 @@ h4:after {
   border-radius: 50%;
   cursor: pointer; }
 
+.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.answer_arrow:hover {
+  -webkit-box-shadow: 0 0 10px #4a76a8;
+  box-shadow: 0 0 10px #4a76a8; }
+
+.answer_arrow::before {
+  position: absolute;
+  content: '';
+  border: 2px solid #aeaeae;
+  width: 9px;
+  height: 9px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 18.5px;
+  top: 18px;
+  border-bottom: 0;
+  border-left: 0; }
+
 .answer_title {
   font-size: 18px;
   font-weight: 500;
   color: #224b7a;
   margin-bottom: 1.5vh;
   display: inline-block;
-  width: 60%; }
+  width: 75%; }
 
 .answer_text_grey {
   background-color: #ededed;

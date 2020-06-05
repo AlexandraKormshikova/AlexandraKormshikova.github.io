@@ -138,6 +138,7 @@ header{
     height: 586px;
     color: #fff;
     position: relative;
+    z-index: 15;
     .container{
         height: 100%;
     }
@@ -587,6 +588,10 @@ header{
     cursor: pointer;
 }
 
+.video_player:hover{
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
 .play{
     position: absolute;
     content: '';
@@ -602,13 +607,12 @@ header{
 .play:before{
     position: absolute;
     content: '';
-    border: 15px solid #fff;
-    border-bottom: 0;
-    border-left: 0;
-    transform: rotate(45deg);
-    left: 25px;
-    bottom: 25px;
+    border-left: 15px solid #fff;
+    left: 28px;
+    bottom: 24px;
     cursor: pointer;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
 }
 
 
@@ -899,7 +903,8 @@ h4:after{
     position: absolute;
     width: 50px;
     height: 50px;
-    border: 1px solid #aeaeae;
+    border: 1px solid $blue;
+    background-color: $blue;
     right: 20px;
     top: 20px;
     border-radius: 50%;
@@ -919,7 +924,7 @@ h4:after{
 .answer_arrow::before{
     position: absolute;
     content: '';
-    border: 2px solid #aeaeae;
+    border: 2px solid #dedede;
     width: 9px;
     height: 9px;
     transform: rotate(45deg);
@@ -928,6 +933,16 @@ h4:after{
     border-bottom: 0;
     border-left: 0;
 }
+
+.answer_arrow.none{
+    background-color: #fff;
+    border: 1px solid #aeaeae;
+}
+
+.answer_arrow.none .answer_arrow::before{
+    transform: rotate(45deg);
+}
+
 
 .answer_title{
     font-size: 18px;
@@ -1003,6 +1018,45 @@ footer{
     display: none;
 }
 
+.under_footer{
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px solid $deep-blue;
+    bottom: 200px;
+    right: 10vw;
+    z-index: 30;
+    background-color: #fff;
+    a{
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.up:after{
+    position: absolute;
+    content: '';
+    width: 9px;
+    height: 9px;
+    border: 3px solid $deep-blue;
+    transform: rotate(45deg);
+    bottom: 10px;
+    left: 13px;
+    border-bottom: 0;
+    border-right: 0;
+}
+
+
+
+
+
+
 
 
 @media(max-width: 1400px){
@@ -1046,9 +1100,10 @@ footer{
         }
     }
     footer{
-        .header_location{
-            display: none;
-        }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: auto;
     }
 
 }
@@ -1080,7 +1135,6 @@ footer{
     }
     footer{
         padding: 10px;
-        height: 10vh;
         .header_phone{
             font-size: calc(15px + (100vw / 1920));
         }
@@ -1127,8 +1181,11 @@ footer{
     h2{
         line-height: normal;
     }
+    footer *{
+        margin: 5px 0;
+    }
     footer{
-        height: 10vh;
+        flex-direction: column;
     }
 }
 
@@ -1213,11 +1270,6 @@ footer{
         .doubt_video{
             padding: 0;
             width: 100%;
-        }
-    }
-    footer{
-        .header_phone{
-            display: none;
         }
     }
     .form_file{

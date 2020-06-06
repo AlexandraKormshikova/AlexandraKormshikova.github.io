@@ -89,7 +89,9 @@ header{
 .header_location{
     display: flex;
     align-items: center;
+    margin: 0 5px;
 }
+
 .circle{
     width: 40px;
     height: 40px;
@@ -100,11 +102,13 @@ header{
     align-items: center;
     margin-right: 15px;
 }
+
 .header_phone{
     color: $blue;
     font-size: 32px;
     font-size: calc(20px + 12*(100vw / 1920));
     font-weight: 400;
+    margin: 0 5px;
     span{
         font-weight: 700;
     }
@@ -119,6 +123,7 @@ header{
     padding-left: 45px;
     position: relative;
     cursor: pointer;
+    margin-left: 20px;
     .circle{
         position: absolute;
         left: -15px;
@@ -1240,16 +1245,16 @@ footer{
 }
 
 @media(max-width: 1125px){
+
+    footer,
     header{
-        .header_location{
-            display: none;
-        }
-    }
-    footer{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
         height: auto;
+    }
+    header{
+        height: 8vh;
     }
 
 }
@@ -1272,9 +1277,18 @@ footer{
     }
 }
 
+@media(max-width: 825px){
+    header{
+        height: auto;
+    }
+}
+
 @media(max-width: 768px){
     header{
-        height: 7vh;
+        .header_logo{
+            max-width: 190px;
+            height: auto;
+        }
         .header_phone{
             font-size: calc(15px + (100vw / 1920));
         }
@@ -1349,7 +1363,24 @@ footer{
 @media(max-width: 460px){
     header{
         .header_phone{
-            display: none;
+            margin: 13px 2px;
+        }
+        .header_logo{
+            width: 150px;
+            margin-bottom: 8px;
+        }
+        .location_icon.circle{
+            width: 30px;
+            height: 30px;
+            img{
+                width: 10px;
+                height: auto;
+            }
+        }
+        .header_call{
+            margin-top: 7px;
+            padding-right: 10px;
+            padding-left: 35px;
         }
     }
     .intro{

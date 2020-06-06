@@ -67,7 +67,9 @@
                     <div class="products_item_text">
                         <div class="products_item_title">AirOzon 5</div>
                         <p>Потребление грамм озона в час........5 <br>Промышленный озонатор воздуха. <br>Огромный спектр применения. <br>Он может применяться</p>
-                        <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        <a href="#popup-order">
+                            <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        </a>
                     </div>
                 </div>
                 <div class="products_item">
@@ -78,7 +80,9 @@
                     <div class="products_item_text">
                         <div class="products_item_title">AirOzon 10</div>
                         <p>Потребление грамм озона в час........5 <br>Промышленный озонатор воздуха. <br>Огромный спектр применения. <br>Он может применяться</p>
-                        <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        <a href="#popup-order">
+                            <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        </a>
                     </div>
                 </div>
                 <div class="products_item">
@@ -89,7 +93,9 @@
                     <div class="products_item_text">
                         <div class="products_item_title">AirOzon 15</div>
                         <p>Потребление грамм озона в час........5 <br>Промышленный озонатор воздуха. <br>Огромный спектр применения. <br>Он может применяться</p>
-                        <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        <a href="#popup-order">
+                            <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        </a>
                     </div>
                 </div>
                 <div class="products_item">
@@ -100,7 +106,9 @@
                     <div class="products_item_text">
                         <div class="products_item_title">AirOzon 30</div>
                         <p>Потребление грамм озона в час........5 <br>Промышленный озонатор воздуха. <br>Огромный спектр применения. <br>Он может применяться</p>
-                        <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        <a href="#popup-order">
+                            <div class="butt_wrap"><button type="button" name="button">Заказать<div class="arrow"></div></button></div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -303,7 +311,7 @@
 <div id="popup-call" class="popup_call">
     <div class="popup_call_body">
         <div class="popup_call_content">
-            <a href="#" class="popup_close">
+            <a href="#close" class="popup_close">
                 <div class="close"></div>
             </a>
             <div class="popup_title">
@@ -340,9 +348,53 @@
     </div>
 </div>
 
+<div id="popup-order" class="popup_call popup-order">
+    <div class="popup_call_body">
+        <div class="popup_call_content">
+            <a href="#close" class="popup_close">
+                <div class="close"></div>
+            </a>
+            <div class="popup_title">
+                сделать заказ
+            </div>
+            <div class="make_review">
+                <form action="#" method="post" enctype="multipart/form-data"></form>
+                <div class="form_name">
+                      <input type="text" name="name" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="name_placeholder">Имя</span>
+                        </label>
+                </div>
+                <div class="form_tel form_name">
+                      <input type="tel" name="phone" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="name_placeholder">Телефон</span>
+                        </label>
+                </div>
+                <div class="form_name">
+                      <input type="text" name="name" autocomplete="off" required />
+                        <label for="name" class="label-name">
+                            <span class="name_placeholder">Адрес доставки</span>
+                        </label>
+                </div>
+                <div class="form_textarea">
+                    <textarea name="review"></textarea>
+                    <label for="review" class="label-name">
+                        <span class="name_placeholder">Текст заявки</span>
+                    </label>
+                </div>
+                <div class="submit_file">
+                    <div class="form_button">
+                        <button type="submit" name="button">Отправить</button>
+                    </div>
+                    <p class="popup_text">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих персональных данных</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
+<div class="close_pop" id="close"></div>
 
 
 

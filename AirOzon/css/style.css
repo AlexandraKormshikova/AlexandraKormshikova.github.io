@@ -528,7 +528,6 @@ header {
   height: auto;
   background: url(../images/img/doubt_bg.png) no-repeat center top/cover; }
   .doubt p {
-    font-size: 16px;
     line-height: 3vh;
     margin-top: 0.5vh;
     padding-top: 10px;
@@ -594,19 +593,23 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-left: 50px;
   margin-top: 1vh;
   position: relative; }
   .doubt_video img {
     max-width: 367px;
-    height: 260px;
+    height: auto;
     cursor: pointer; }
   .doubt_video p {
     padding-left: 40px;
     margin: 0; }
 
 .video_player {
-  position: relative; }
+  position: relative;
+  height: auto; }
 
 .video_player:before,
 .video_player:after {
@@ -999,6 +1002,8 @@ footer {
   position: relative;
   background-color: #fff;
   margin-top: 8vh; }
+  footer a {
+    color: #000; }
 
 .under_footer {
   z-index: -4;
@@ -1194,6 +1199,27 @@ footer {
   opacity: 1;
   visibility: visible; }
 
+.popup-order .submit_file {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+  .popup-order .submit_file p {
+    display: inline-block;
+    width: 50%; }
+
+.popup-order .popup_text {
+  margin: 0; }
+
+.close_pop {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  left: 0;
+  top: 0; }
+
 @media (max-width: 1400px) {
   .adv:before {
     display: none; } }
@@ -1257,8 +1283,6 @@ footer {
       font-size: calc(15px + (100vw / 1920)); } }
 
 @media (max-width: 660px) {
-  header {
-    height: 5vh; }
   .intro {
     padding-top: 20px;
     height: 90vh;
@@ -1299,7 +1323,16 @@ footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column; } }
+    flex-direction: column; }
+    footer .header_call {
+      height: 40px; }
+    footer .circle {
+      top: -5px; }
+    footer .header_logo {
+      height: 50px;
+      width: auto; }
+    footer .header_call {
+      padding-right: 20px; } }
 
 @media (max-width: 460px) {
   header .header_phone {
@@ -1382,7 +1415,24 @@ footer {
     .popup_call_content .make_review {
       padding-bottom: 30px; }
     .popup_call_content .popup_title {
-      padding: 30px 0; } }
+      padding: 30px 0; }
+  .popup-order .submit_file {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+    .popup-order .submit_file p {
+      display: inline-block;
+      margin-top: 20px;
+      width: 90%; }
+  .popup-order .popup_text {
+    margin: 0; } }
 
 @media (max-width: 340px) {
   .doubt_body_text {
@@ -1392,10 +1442,9 @@ footer {
   .video_player:before,
   .video_player:after {
     left: 65px;
-    top: 45px; }
+    top: 18px; }
   .video_player:after {
-    left: 40px;
-    top: 16px; }
+    display: none; }
   .play {
     position: absolute;
     content: '';
@@ -1404,5 +1453,5 @@ footer {
     height: 65px;
     border-radius: 50%;
     left: 123px;
-    top: 95px;
+    top: 75px;
     cursor: pointer; } }

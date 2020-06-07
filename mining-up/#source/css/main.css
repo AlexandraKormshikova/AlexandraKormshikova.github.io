@@ -1742,10 +1742,18 @@ a.effect-bubba:hover p {
 .under_header {
   width: 100%;
   height: 50px;
-  background-color: #1c1c1c;
+  background-color: #000;
   color: #fff; }
   .under_header .container {
     height: 100%; }
+
+    .under_header_icons svg{
+        fill: #636363;
+    }
+
+    .under_header_icons svg:hover{
+        fill: #f8da70;
+    }
 
 .under_header_body {
   width: 100%;
@@ -1756,9 +1764,9 @@ a.effect-bubba:hover p {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   color: #e7e6e1;
   font-size: 14px;
   font-weight: 300; }
@@ -1791,8 +1799,13 @@ a.effect-bubba:hover p {
       font-weight: 900;
       font-size: 16px; }
     .under_header_body .left .under_header_icons {
-      margin-left: 5vw; }
-      .under_header_body .left .under_header_icons img {
+        margin-left: 5vw;
+        padding: 0 15px;
+        padding-top: 8px;
+        height: 100%;
+        box-sizing: border-box;
+        background-color: #1c1c1c; }
+      .under_header_body .left .under_header_icons svg {
         margin: 0 4px; }
 
 @media (max-width: 1000px) {
@@ -1800,3 +1813,23 @@ a.effect-bubba:hover p {
     display: none; }   .main_header{
           background-color: #1c1c1c;
       }}
+
+
+      h2{
+          font-size: calc(20px + 12 * (100vw / 1560));
+          line-height: 1.28;
+      }
+      h1{
+          font-size: calc(36px + 24 * (100vw / 1560));
+          line-height: 1.3;
+      }
+
+      p{
+          font-size: 16px;
+          line-height: 1.8em;
+      }
+
+      h3{
+          font-size: calc(18px + 6 * (100vw / 1560));
+          line-height: 1.18;
+      }

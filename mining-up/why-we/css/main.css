@@ -1799,12 +1799,12 @@ a.effect-bubba:hover p {
       font-weight: 900;
       font-size: 16px; }
     .under_header_body .left .under_header_icons {
-        margin-left: 5vw;
-        padding: 0 15px;
-        padding-top: 8px;
-        height: 100%;
-        box-sizing: border-box;
-        background-color: #1c1c1c; }
+      margin-left: 5vw;
+      padding: 0 15px;
+      padding-top: 8px;
+      height: 100%;
+      box-sizing: border-box;
+      background-color: #1c1c1c;}
       .under_header_body .left .under_header_icons svg {
         margin: 0 4px; }
 

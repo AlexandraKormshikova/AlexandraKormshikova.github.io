@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Слой_2" width="32.683" height="32.69" data-name="Слой 2" viewBox="0 0 32.683 32.69">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#e7e6e1}
+        </style>
+    </defs>
+    <g id="prefix__Icons">
+        <path id="prefix__Path_4704" d="M16.1 4.131A15.834 15.834 0 1 1 4.9 8.77a15.833 15.833 0 0 1 11.2-4.639m0-.262a16.093 16.093 0 1 0 11.376 4.709A16.092 16.092 0 0 0 16.1 3.87z" class="prefix__cls-1" data-name="Path 4704" transform="translate(-.008 -3.367)"/>
+        <path id="prefix__Path_4705" d="M56.756 4.884a16.608 16.608 0 0 0-23.476 0l1.028 1.023a15.147 15.147 0 1 1 21.42 21.421l1.028 1.028a16.608 16.608 0 0 0 0-23.471z" class="prefix__cls-1" data-name="Path 4705" transform="translate(-28.929 -.025)"/>
+        <path id="prefix__Path_4706" d="M43.7 33.549a14.051 14.051 0 1 0-14.046 14.044h.377v-9.859H26.5v-4.1h3.537v-3.026c0-3.506 2.142-5.415 5.27-5.415a29.141 29.141 0 0 1 3.162.161v3.662H36.3c-1.7 0-2.03.808-2.03 2v2.615h4.054l-.523 4.1h-3.532v9.09A14.057 14.057 0 0 0 43.7 33.549z" class="prefix__cls-1" data-name="Path 4706" transform="translate(-13.561 -16.945)"/>
+    </g>
+</svg>

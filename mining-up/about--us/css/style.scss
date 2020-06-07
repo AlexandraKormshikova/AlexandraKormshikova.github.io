@@ -12,6 +12,11 @@
     }
 }
 
+h2{
+    font-size: calc(20px + 12 * (100vw / 1560));
+    line-height: 1.28;
+}
+
 .intro_black{
     height: 100%;
     width: 100%;
@@ -175,5 +180,11 @@ h2{
             margin-top: 3vh;
             width: 95%;
         }
+    }
+}
+
+.under_header_body{
+    p{
+        font-size: 14px;
     }
 }

@@ -1230,6 +1230,10 @@ footer {
   top: 0;
   left: 0; }
 
+.popup_call {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
 @media (max-width: 1400px) {
   .adv:before {
     display: none; } }

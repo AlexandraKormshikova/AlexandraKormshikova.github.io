@@ -1209,6 +1209,13 @@ footer{
     height: 100%;
     top: 0;
     left: 0;
+
+    .popup_call{}
+}
+
+.popup_call{
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 

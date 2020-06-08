@@ -144,8 +144,43 @@ h1::before {
 h2 {
   font-size: 32px; }
 
+.button_show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 100px 0; }
+  .button_show button {
+    padding: 20px 70px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 24px;
+    color: #ce171b;
+    font-weight: 900;
+    background-color: inherit;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: .1px solid #dedede; }
+  .button_show button:hover {
+    background-color: #f2f2f2;
+    color: #1c1c1c;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    border: .1px solid #f2f2f2; }
+
 @media (max-width: 600px) {
   h2 {
     font-size: calc(20px + 12*(100vw / 1560)); }
   .cards_item {
-    padding: 25px; } }
+    padding: 25px; }
+  .main {
+    height: auto;
+    padding-top: 50px; }
+  .button_show {
+    padding: 60px 0; }
+    .button_show button {
+      font-size: 20px; } }

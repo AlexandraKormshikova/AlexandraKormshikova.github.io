@@ -16,6 +16,10 @@ img {
   display: flex;
 }
 
+.under_header svg{
+    cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }

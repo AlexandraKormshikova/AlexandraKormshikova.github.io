@@ -1,0 +1,1 @@
+сделать карточки в блоке "Stable earnings on technologies of the future" слайдером, еще в карточке "Lucrative conditions" картинка не вытаскивается, надо попросить нормальную

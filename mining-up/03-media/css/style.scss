@@ -1,0 +1,167 @@
+
+// intro
+
+.intro{
+    margin-top: -75px;
+    width: 100%;
+    height: 300px;
+    background-color: #000;
+    background: url(../img/bg.jpg) no-repeat center top/cover;
+    color: #fff;
+    .container{
+        height: 100%;
+    }
+}
+
+.intro_black{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    z-index: 0;
+}
+
+h1{
+    padding-top: 50px;
+    font-size: 60px;
+    font-size: calc(36px + 24 * (100vw / 1560));
+    font-weight: 300;
+    position: relative;
+    margin-left: 40px;
+}
+
+h1::before{
+    position: absolute;
+    content: '';
+    background-color: #ddbe82;
+    width: 7px;
+    height: 80%;
+    top: 35%;
+    left: -40px;
+}
+
+.intro_body{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* desc */
+
+.main{
+    padding: 76px 0;
+    padding-bottom: 50px;
+}
+
+.desc_title{
+    font-size: 18px;
+    font-weight: 900;
+    color: #000;
+    margin-bottom: 17px;
+}
+
+.desc{
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.21;
+    color: #8e8e8e;
+    a{
+        font-weight: bold;
+        color: #ce171b;
+    }
+    a:hover{
+        text-decoration: underline;
+
+    }
+}
+
+/* cards */
+
+.cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cards_item{
+    width: 366px;
+    height: 540px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.1);
+    padding: 35px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+.anim_link{
+    margin-top: 15px;
+    padding: 12px;
+}
+.anim_link::before{
+    background-color: #ddbe82;
+}
+
+.published_data{
+    color: #fdc530;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 14px;
+}
+
+.published_title{
+    font-size: 32px;
+}
+
+.cards_text{
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+    height: 270px;
+    overflow: hidden;
+    color: #153156;
+}
+
+.cards_item_overlay{
+    position: absolute;
+    left: 0;
+    bottom: 90px;
+    height: 100px;
+    width:100%;
+    background: linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+h2{
+    font-size: 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px){
+    h2{
+        font-size: calc(20px + 12*(100vw / 1560));
+    }
+    .cards_item{
+        padding: 25px;
+    }
+}

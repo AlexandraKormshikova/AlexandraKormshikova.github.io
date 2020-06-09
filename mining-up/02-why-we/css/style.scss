@@ -53,6 +53,12 @@ p{
     line-height: 1.8em;
 }
 
+.under_header{
+    p{
+        font-size: 14px;
+    }
+}
+
 .intro_body{
     height: 100%;
     display: flex;
@@ -78,12 +84,18 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    p{
+        color: #153156;
+        line-height: 1.88;
+    }
 }
 
 .text_text{
     width: 65%;
     p{
         margin-bottom: 50px;
+        color: #153156;
+        line-height: 1.88em;
     }
 }
 
@@ -104,7 +116,15 @@ h3{
     align-items: center;
     box-sizing: border-box;
     padding: 60px;
+    position: relative;
+}
 
+.text_image{
+    img{
+        position: absolute;
+        right: -20px;
+        bottom: -15px;
+    }
 }
 
 h2{
@@ -159,6 +179,7 @@ background-color: #f8da70;}
     text-align: center;
     margin: 0 auto;
     margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 .mining-p2{
     display: block;
@@ -168,6 +189,7 @@ background-color: #f8da70;}
     line-height: 1.88;
     color: #153156;
     padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -181,14 +203,22 @@ background-color: #f8da70;}
     }
 }
 
+.dd-select{
+    background-color: #1c1c1c;
+}
 
 
 
 
 
 
-
-
+@media(max-width: 1053px){
+    .text_image{
+        img{
+            display: none;
+        }
+    }
+}
 
 @media(max-width: 1000px){
     .text_text{

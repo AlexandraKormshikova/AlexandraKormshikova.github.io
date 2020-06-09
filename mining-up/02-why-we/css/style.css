@@ -40,9 +40,12 @@ h3 {
   font-weight: 900;
   margin: 20px 0; }
 
-.under_header p {
-  font-size: 14px;
+p {
+  font-size: 16px;
   line-height: 1.8em; }
+
+.under_header p {
+  font-size: 14px; }
 
 .intro_body {
   height: 100%;
@@ -72,11 +75,16 @@ h3 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .text_main p {
+    color: #153156;
+    line-height: 1.88; }
 
 .text_text {
   width: 65%; }
   .text_text p {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    color: #153156;
+    line-height: 1.88em; }
 
 .text_text_right {
   display: block;
@@ -100,7 +108,13 @@ h3 {
   align-items: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 60px; }
+  padding: 60px;
+  position: relative; }
+
+.text_image img {
+  position: absolute;
+  right: -20px;
+  bottom: -15px; }
 
 h2 {
   font-size: calc(20px + 12 * (100vw / 1560));
@@ -142,7 +156,8 @@ h2 {
   max-width: 941px;
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif; }
 
 .mining-p2 {
   display: block;
@@ -151,10 +166,18 @@ h2 {
   margin: 0 auto;
   line-height: 1.88;
   color: #153156;
-  padding-bottom: 30px; }
+  padding-bottom: 30px;
+  font-family: 'Roboto', sans-serif; }
 
 .partners h2 {
   text-align: center; }
+
+.dd-select {
+  background-color: #1c1c1c; }
+
+@media (max-width: 1053px) {
+  .text_image img {
+    display: none; } }
 
 @media (max-width: 1000px) {
   .text_text {

@@ -88,7 +88,7 @@ h1::before{
 }
 
 .cards_item{
-    width: 366px;
+    width: 31%;
     height: 540px;
     box-shadow: 0 0 50px rgba(0,0,0,0.1);
     padding: 35px;
@@ -169,21 +169,32 @@ h2{
     }
 }
 
+.dd-select{
+    background-color: #1c1c1c;
+}
 
 
 
 
 
 
-
-
-
-@media(max-width: 600px){
+@media(max-width: 920px){
+    .cards_item{
+        width: 45%;
+    }
     h2{
         font-size: calc(20px + 12*(100vw / 1560));
     }
+}
+
+@media(max-width: 600px){
     .cards_item{
         padding: 25px;
+        width: 90%;
+        height: 480px;
+        .cards_text{
+            height: 240px;
+        }
     }
     .main{
         height: auto;

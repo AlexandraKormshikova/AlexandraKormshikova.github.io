@@ -376,7 +376,6 @@ section {
 }
 
 .button.button__yellow {
-  background-color: #f8da70;
   color: #1c1c1c;
   font-size: 24px;
   font-weight: 900;
@@ -1222,17 +1221,19 @@ h1 span{
 }
 
 .news__container {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   display: flex;
   overflow: hidden;
-  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
 }
 
 .news__container .news__post {
-  width: 30.5%;
+  width: 30%;
   border-radius: 10px 7px;
-  margin: 10px;
+  margin: 15px 5px;
   border-bottom: 5px solid #153156;
   box-shadow: 0 3px 25px 0 rgba(0, 0, 0, 0.16);
   position: relative;
@@ -1256,6 +1257,7 @@ h1 span{
 }
 
 .news__container .news__post__thumb img {
+    width: 100%;
   object-fit: cover;
 }
 
@@ -1306,7 +1308,6 @@ h1 span{
   display: block;
   transition: transform 0.35s;
   transform: translate3d(0, 200%, 0);
-  background: url("../img/icon/arrow_right_icon.svg") no-repeat;
   background-position: right 15px center;
 }
 
@@ -1321,7 +1322,6 @@ h1 span{
   height: 60px;
   border-radius: 30px;
   border: solid 1px #e7e6e1;
-  background: url("../img/icon/slider_arrow.svg") no-repeat;
   background-position: center;
   transition: all .3s ease;
   margin: 10px 0;
@@ -1344,7 +1344,6 @@ h1 span{
 
 @media (max-width: 455px) {
   .news__container {
-    flex-direction: column-reverse;
     padding-bottom: 60px;
   }
   .news__container .news__slider__arrows {
@@ -1374,7 +1373,7 @@ h1 span{
   font-family: 'Roboto';
   font-size: 15px;
   font-style: italic;
-  color: #ececec;
+  color: #b1b0aa;
 }
 
 .crypto-news__container {

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="367" height="367" viewBox="0 0 367 367">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #e7e6e1;
+        stroke-width: 3px;
+        stroke-dasharray: 3 15;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Ellipse_1440" data-name="Ellipse 1440" class="cls-1">
+    <circle class="cls-2" cx="183.5" cy="183.5" r="183.5"/>
+    <circle class="cls-3" cx="183.5" cy="183.5" r="182"/>
+  </g>
+</svg>

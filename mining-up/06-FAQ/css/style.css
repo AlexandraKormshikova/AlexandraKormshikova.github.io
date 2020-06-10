@@ -1,0 +1,196 @@
+.intro {
+  margin-top: -75px;
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  background: url(../img/bg.png) no-repeat center top/cover;
+  color: #fff; }
+  .intro .container {
+    height: 100%; }
+
+.intro_black {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  z-index: 0; }
+
+h1 {
+  padding-top: 50px;
+  font-size: 60px;
+  font-size: calc(36px + 24 * (100vw / 1560));
+  font-weight: 300;
+  position: relative;
+  margin-left: 40px; }
+
+h1::before {
+  position: absolute;
+  content: '';
+  background-color: #ddbe82;
+  width: 7px;
+  height: 80%;
+  top: 35%;
+  left: -40px; }
+
+h3 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 20px 0; }
+
+p {
+  font-size: 16px;
+  line-height: 1.8em; }
+
+.under_header p {
+  font-size: 14px; }
+
+.intro_body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+h3 {
+  font-size: calc(18px + 6 * (100vw / 1560));
+  line-height: 1.18; }
+
+/* main body */
+.main_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+
+.main_body_item {
+  width: 45%;
+  margin: 50px 10px 45px 0; }
+  .main_body_item a {
+    color: #ce171b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+  .main_body_item p {
+    line-height: normal;
+    margin-bottom: 13px;
+    padding-left: 35px;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+  .main_body_item h2 {
+    padding-bottom: 26px; }
+
+.main_body_item p {
+  background: url(../img/icon/arrow-faq.svg) left 2px no-repeat; }
+
+.main_body_item p:hover {
+  padding-left: 50px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.main_body_item p:hover a {
+  border-bottom: 1px dashed #ce171b;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
+
+.line {
+  background-color: #e5e5e5;
+  width: 100%;
+  height: 1px; }
+
+/* popup */
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  z-index: 1000000;
+  visibility: hidden;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.popup:target {
+  visibility: visible;
+  opacity: 1; }
+
+.popup_body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 15px; }
+
+.popup_content {
+  background-color: #fff;
+  max-width: 919px;
+  padding: 68px 55px 55px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative; }
+
+.popup_text {
+  color: #153156;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.67;
+  font-style: italic; }
+
+.popup_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .popup_close svg {
+    width: 40px;
+    height: auto; }
+
+.popup_close:hover svg {
+  fill: #ce171b; }
+
+@media (max-width: 700px) {
+  .main_body_item {
+    width: 97%;
+    margin: 30px 0; }
+  .popup_content {
+    padding: 60px 25px 30px; }
+  .main_body {
+    margin-bottom: 20px; } }
+
+@media (max-width: 590px) {
+  .intro {
+    height: 30vh; }
+  h2 {
+    font-size: calc(21px + 10*(100vw / 1870)); } }

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.623" height="27.362" viewBox="0 0 32.623 27.362">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#00b2ff}
+        </style>
+    </defs>
+    <g id="prefix__Telegram_logo">
+        <path id="prefix__Path_17652" d="M82 93.052L104 80" data-name="Path 17652" transform="translate(-73.73 -78.045)" style="fill:#8ecaff"/>
+        <path id="prefix__Path_17653" d="M98 152.055a1.922 1.922 0 0 0 1.5-.75l4-3.889-4.99-3.009" class="prefix__cls-2" data-name="Path 17653" transform="translate(-85.73 -126.35)"/>
+        <path id="prefix__Path_17654" d="M61.7 90.237l12.09 8.932c1.38.761 2.375.367 2.719-1.281l4.92-23.188c.5-2.02-.77-2.937-2.09-2.337L50.442 83.5c-1.972.791-1.961 1.892-.36 2.382L57.5 88.2l17.166-10.831c.811-.492 1.555-.228.944.314" class="prefix__cls-2" data-name="Path 17654" transform="translate(-48.919 -72.18)"/>
+    </g>
+</svg>

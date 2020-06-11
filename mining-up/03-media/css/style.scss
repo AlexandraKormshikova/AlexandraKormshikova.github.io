@@ -1,6 +1,19 @@
 
 // intro
 
+.dd-select{
+    background-color: #1c1c1c;
+}
+
+.dd-select:after{
+    position: absolute;
+    content: '';
+    width: 127px;
+    height: 1px;
+    background-color: #ce171b;
+    bottom: 1px;
+}
+
 .intro{
     margin-top: -75px;
     width: 100%;

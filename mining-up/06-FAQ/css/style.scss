@@ -1,5 +1,17 @@
-
 // intro
+
+.dd-select{
+    background-color: #1c1c1c;
+}
+
+.dd-select:after{
+    position: absolute;
+    content: '';
+    width: 127px;
+    height: 1px;
+    background-color: #ce171b;
+    bottom: 1px;
+}
 
 .intro{
     margin-top: -75px;
@@ -87,7 +99,6 @@ h3{
     a{
         color: #ce171b;
         font-family: 'Roboto', sans-serif;
-        font-weight: 500;
         transition: all .2s ease;
     }
     p{
@@ -185,22 +196,6 @@ h3{
 .popup_close:hover svg{
     fill: #ce171b;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media(max-width: 700px){

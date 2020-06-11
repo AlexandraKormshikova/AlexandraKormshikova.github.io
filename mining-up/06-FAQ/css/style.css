@@ -1,3 +1,14 @@
+.dd-select {
+  background-color: #1c1c1c; }
+
+.dd-select:after {
+  position: absolute;
+  content: '';
+  width: 127px;
+  height: 1px;
+  background-color: #ce171b;
+  bottom: 1px; }
+
 .intro {
   margin-top: -75px;
   width: 100%;
@@ -78,7 +89,6 @@ h3 {
   .main_body_item a {
     color: #ce171b;
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     -webkit-transition: all .2s ease;
     -o-transition: all .2s ease;
     transition: all .2s ease; }

@@ -60,6 +60,17 @@ h3 {
   font-size: calc(18px + 6 * (100vw / 1560));
   line-height: 1.18; }
 
+.dd-select {
+  background-color: #1c1c1c; }
+
+.dd-select:after {
+  position: absolute;
+  content: '';
+  width: 127px;
+  height: 1px;
+  background-color: #ce171b;
+  bottom: 1px; }
+
 main {
   background-color: #f2f2f2; }
 

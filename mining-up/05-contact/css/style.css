@@ -1,0 +1,210 @@
+/* main contacts */
+.under_header p {
+  font-size: 14px; }
+
+main {
+  margin-top: -75px;
+  background-color: #000;
+  padding-top: 75px; }
+
+.main_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  height: 764px; }
+
+.main_contacts {
+  width: 45%;
+  background: url(../img/bg.png);
+  position: relative;
+  z-index: 0; }
+
+.main_contacts_cover {
+  position: absolute;
+  z-index: 0;
+  background-color: rgba(28, 28, 28, 0.9);
+  width: 100%;
+  height: 100%; }
+
+.contact_form {
+  width: 55%;
+  background-color: #fff; }
+
+.dd-select {
+  background-color: #1c1c1c; }
+
+.dd-select:after {
+  position: absolute;
+  content: '';
+  width: 127px;
+  height: 1px;
+  background-color: #ce171b;
+  bottom: 1px; }
+
+.title {
+  color: #e7e6e1;
+  font-size: 60px;
+  font-size: calc(50px + 10*(100vw / 1560));
+  font-weight: 300;
+  z-index: 2000; }
+
+.main_contacts_body {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: #fff; }
+  .main_contacts_body .main_wrap {
+    width: 430px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-left: 10px; }
+
+.main_general {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 20px; }
+
+.main_subtitle {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1.67; }
+
+.main_text {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.22; }
+
+.main_email {
+  padding-top: 0;
+  padding-bottom: 200px; }
+  .main_email a {
+    color: #f8da70;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif; }
+  .main_email a:hover {
+    text-decoration: underline; }
+
+/* contact form */
+.contact_form {
+  padding: 60px 7px 123px 64px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .contact_form .title {
+    color: #1c1c1c; }
+
+.contacts_subtitle {
+  color: #636363;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.21;
+  font-weight: 300;
+  display: block;
+  max-width: 519px;
+  margin-top: 10px; }
+  .contacts_subtitle a {
+    font-weight: bold;
+    color: #ce171b; }
+
+/* forms */
+.forms {
+  margin-top: 15px;
+  max-width: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+form {
+  width: 0;
+  height: 0;
+  position: absolute; }
+
+.form_name,
+.form_email {
+  width: 46%; }
+  .form_name input,
+  .form_email input {
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #e7e6e1;
+    width: 98%; }
+
+.form_textarea {
+  width: 100%; }
+  .form_textarea textarea {
+    border-radius: 5px;
+    border: 1px solid #e7e6e1;
+    height: 130px;
+    width: 99%; }
+
+.form {
+  margin-top: 44px;
+  position: relative; }
+
+.label-name {
+  position: absolute;
+  top: -30px;
+  left: 0; }
+
+.main {
+  padding: 0;
+  padding-top: 40px;
+  width: auto;
+  height: auto; }
+
+.button__yellow {
+  background-color: #f8da70;
+  text-align: left; }
+
+.button.button__yellow.button--aylen {
+  margin-left: 0; }
+
+@media (max-width: 1025px) {
+  .main_wrap {
+    max-width: 430px; }
+  .contact_form {
+    padding-left: 30px; } }
+
+@media (max-width: 656px) {
+  .main_body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 0;
+    margin-top: 0; }
+  .contact_form {
+    width: 100%;
+    padding: 30px 7px; }
+  .main_contacts,
+  .main_contacts_cover,
+  .main_contacts_body,
+  .main_wrap {
+    width: 100%;
+    height: 550px; } }

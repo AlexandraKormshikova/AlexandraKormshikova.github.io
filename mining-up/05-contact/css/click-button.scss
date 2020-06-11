@@ -1,0 +1,23 @@
+
+
+.butt {
+ position: relative;
+ transition: .5s;
+ overflow: hidden;
+}
+
+
+.pulse {
+ background-color: rgba(225,225,225,0.8);
+ border-radius: 50%;
+ animation: pulse 0.7s ease-out;
+ transform: scale(0);
+ position: absolute;
+}
+@keyframes pulse {
+ to {
+  transform: scale(2);
+  background-color: #fff;
+  opacity: 0;
+ }
+}

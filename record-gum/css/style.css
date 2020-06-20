@@ -270,8 +270,11 @@ h1 {
   background-color: rgba(225, 225, 225, 0.2);
   color: #fff; }
 
-.no-touch a:hover {
-  background-color: lightgreen; }
+@media (max-width: 1024px) {
+  a:hover {
+    color: #fff;
+    fill: inherit;
+    background-color: inherit; } }
 
 @media (max-width: 810px) {
   .header_body {

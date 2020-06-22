@@ -370,7 +370,7 @@ h1{
 
 
 
-@media(handheld){
+@media screen and (handheld){
     .social{
         svg:hover{
             fill: #fff;

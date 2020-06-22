@@ -407,7 +407,7 @@ h1 {
   -ms-flex-pack: center;
   justify-content: center; }
 
-@media (handheld) {
+@media screen and (handheld) {
   .social svg:hover {
     fill: #fff; }
   .phone:hover a,

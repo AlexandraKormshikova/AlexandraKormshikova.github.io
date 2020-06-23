@@ -199,8 +199,7 @@ svg:hover {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
-  border: 1px solid red; }
+  flex-direction: column; }
 
 .h1_subtitle {
   font-weight: 300;
@@ -287,7 +286,7 @@ svg:hover {
 
 /* mobil menu */
 .header_mob.none {
-  display: none; }
+  top: -100%; }
 
 .mob_menu {
   width: 65px;
@@ -317,6 +316,9 @@ svg:hover {
   top: -10px; }
 
 .header_mob {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   color: #fff;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);

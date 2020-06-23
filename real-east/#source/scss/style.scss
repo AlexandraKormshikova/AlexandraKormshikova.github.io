@@ -155,7 +155,6 @@ svg:hover{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .h1_subtitle{
@@ -248,7 +247,7 @@ svg:hover{
 /* mobil menu */
 
 .header_mob.none{
-    display: none;
+    top: -100%;
 }
 
 .mob_menu{
@@ -283,6 +282,7 @@ svg:hover{
 }
 
 .header_mob{
+    transition: .5s;
     color: #fff;
     position: absolute;
     background-color: rgba(0,0,0,0.8);

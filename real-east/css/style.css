@@ -577,6 +577,38 @@ svg:hover {
     text-align: center;
     font-weight: 600; }
 
+/* addreses.html */
+.addres_content_wrap {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .addres_content_wrap .content {
+    background: #FFFFFF;
+    -webkit-box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+    max-width: 1296px;
+    height: auto;
+    padding: 80px;
+    margin: 20px; }
+  .addres_content_wrap h2 {
+    font-size: 1.95em;
+    text-align: left; }
+  .addres_content_wrap p {
+    color: #000; }
+  .addres_content_wrap .addres_subtitle {
+    color: #464646;
+    font-size: 1.5em;
+    margin: 50px 0;
+    line-height: 110%; }
+
 @media (max-width: 1540px) {
   body {
     font-size: calc(11px + 6*(100vw / 1920)); }
@@ -632,7 +664,9 @@ svg:hover {
   .intro_body {
     min-height: 100vh;
     height: auto;
-    padding-bottom: 30px; } }
+    padding-bottom: 30px; }
+  .addres_content_wrap .content {
+    padding: 40px; } }
 
 @media (max-width: 780px) {
   .select_item {
@@ -675,7 +709,12 @@ svg:hover {
   .h1_subtitle {
     margin-top: 5vh; }
   .select {
-    padding: 20px 15px; } }
+    padding: 20px 15px; }
+  .addres_content_wrap {
+    height: auto;
+    margin-bottom: 30px; }
+    .addres_content_wrap .content {
+      padding: 20px; } }
 
 @media (max-width: 382px) {
   .select_item {

@@ -559,6 +559,68 @@ svg:hover{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* addreses.html */
+
+.addres_content_wrap{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+        background: #FFFFFF;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+        max-width: 1296px;
+        height: auto;
+        padding: 80px;
+        margin: 20px;
+    }
+    h2{
+        font-size: 1.95em;
+        text-align: left;
+    }
+    p{
+        color: #000;
+    }
+    .addres_subtitle{
+        color: #464646;
+        font-size: 1.5em;
+        margin: 50px 0;
+        line-height: 110%;
+    }
+}
+
+
+
+
+
+
 @media(max-width: 1540px){
     body{
         font-size: calc(11px + 6*(100vw / 1920));
@@ -639,6 +701,11 @@ svg:hover{
         height: auto;
         padding-bottom: 30px;
     }
+    .addres_content_wrap{
+        .content{
+            padding: 40px;
+        }
+    }
 }
 
 @media(max-width: 780px){
@@ -703,6 +770,13 @@ svg:hover{
     }
     .select{
         padding: 20px 15px;
+    }
+    .addres_content_wrap{
+        height: auto;
+        margin-bottom: 30px;
+        .content{
+            padding: 20px;
+        }
     }
 }
 

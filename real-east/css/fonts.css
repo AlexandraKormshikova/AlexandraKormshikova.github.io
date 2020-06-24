@@ -23,6 +23,18 @@
 }
 
 @font-face {
+    font-family: 'Graphik LCG';
+    src: url('../fonts/GraphikLCG-Black.eot');
+    src: local('../fonts/Graphik LCG Black'), local('GraphikLCG-Regular'),
+        url('../fonts/GraphikLCG-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GraphikLCG-Black.woff2') format('woff2'),
+        url('../fonts/GraphikLCG-Black.woff') format('woff'),
+        url('../fonts/GraphikLCG-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Graphik LCG1';
     src: url('../fonts/GraphikLCG-SemiBold.eot');
     src: local('../fonts/Graphik LCG SemiBold'), local('GraphikLCG-Regular'),

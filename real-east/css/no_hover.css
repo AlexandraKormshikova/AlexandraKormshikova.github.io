@@ -19,7 +19,7 @@ svg:hover{
 }
 
 .intro_button:hover{
-    background-color: rgba(254,202,54,0.0);
+    background-color: inherit;
 }
 .intro_icons_social svg:hover{
     fill: #fff;

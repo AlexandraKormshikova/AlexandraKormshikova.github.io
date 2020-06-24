@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Graphik LCG';
+    font-family: 'Graphik LCG1';
     src: url('../fonts/GraphikLCG-SemiBold.eot');
     src: local('../fonts/Graphik LCG SemiBold'), local('GraphikLCG-Regular'),
         url('../fonts/GraphikLCG-SemiBold.eot?#iefix') format('embedded-opentype'),
@@ -35,7 +35,7 @@
 }
 
 @font-face {
-    font-family: 'Graphik LCG';
+    font-family: 'Graphik LCG1';
     src: url('../fonts/GraphikLCG-Light.eot');
     src: local('../fonts/Graphik LCG Light'), local('GraphikLCG-Regular'),
         url('../fonts/GraphikLCG-Light.eot?#iefix') format('embedded-opentype'),
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Graphik LCG';
+    font-family: 'Graphik LCG1';
     src: url('../fonts/GraphikLCG-Medium.eot');
     src: local('../fonts/Graphik LCG Medium'), local('GraphikLCG-Regular'),
         url('../fonts/GraphikLCG-Medium.eot?#iefix') format('embedded-opentype'),

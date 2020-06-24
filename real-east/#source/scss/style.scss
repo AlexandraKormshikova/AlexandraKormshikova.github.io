@@ -22,11 +22,24 @@ $grey: #EEEEEE;
 
 body{
     margin: 0;
-    font-family: 'Graphik LCG', sans-serif;
+    font-family: 'Graphik LCG1', sans-serif;
     color: #464646;
     font-size: 18px;
     line-height: 139%;
+    width: auto;
+    height: auto;
 }
+html{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 
 h1{
     font-size: 96px;
@@ -145,11 +158,14 @@ svg:hover{
     width: 100%;
     height: 100vh;
     background: url(../img/index/bg.png) no-repeat top/cover;
+    .container{
+        height: 100%;
+    }
 }
 
 .intro_body{
     position: relative;
-    height: 80vh;
+    height: 78%;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -247,7 +263,7 @@ svg:hover{
 /* mobil menu */
 
 .header_mob.none{
-    top: -100%;
+    top: -170%;
 }
 
 .mob_menu{
@@ -282,23 +298,30 @@ svg:hover{
 }
 
 .header_mob{
-    transition: .5s;
+    transition: .4s;
     color: #fff;
     position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.9);
     height: auto;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
+    overflow: auto;
 }
 
 .mob_header_login{
     padding: 15px;
+    display: inline-block;
     a{
         display: inline-block;
         text-align: center;
     }
+}
+
+.header_mob_contacts{
+    display: inline-block;
+    padding: 20px;
 }
 
 .header_mob_choose{
@@ -326,7 +349,7 @@ svg:hover{
 .header_nav_mob{
     text-align: center;
     li{
-        padding: 20px;
+        padding: 15px;
     }
 }
 
@@ -344,10 +367,10 @@ svg:hover{
 
 @media(max-width: 1500px){
     body{
-        font-size: calc(12px + 6*(100vw / 1920));
+        font-size: calc(11px + 6*(100vw / 1920));
     }
     h1{
-        font-size: calc(25px + 71*(100vw / 1920));
+        font-size: calc(22px + 71*(100vw / 1920));
     }
 }
 
@@ -386,5 +409,57 @@ svg:hover{
     }
     .header_contacts{
         margin-right: 20px;
+    }
+}
+
+@media(max-width: 850px){
+    .intro_buttons{
+        text-align: center;
+        width: 100%;
+    }
+    .intro,
+    .intro_body{
+        min-height: 100vh;
+        height: auto;
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width: 570px){
+    .intro{
+        height: auto;
+    }
+    .intro_button{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .mob_menu{
+        width: 50px;
+    }
+    .header_contacts{
+        margin-right: 10px;
+    }
+    h1{
+        line-height: normal;
+        span{
+            line-height: 0px;
+        }
+    }
+    // .intro_body{
+    //     margin-top: 40px;
+    // }
+    .header_contacts{
+        .yellow{
+            display: none;
+        }
+    }
+    .intro_buttons{
+        margin-top: 5vh;
+    }
+    .intro_button{
+        padding: 20px;
+    }
+    .h1_subtitle{
+        margin-top: 5vh;
     }
 }

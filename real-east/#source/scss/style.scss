@@ -16,12 +16,13 @@ h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight:inherit;}
 
 /* Обнуление */
 
-$yellow: #FECA36;
+// $yellow: #FECA36;
+$yellow: orangered;
 $black: #464646;
 $grey: #EEEEEE;
 
 *{
-    -webkit-appearence: none;
+    -webkit-appearence: none !important;
 }
 
 body{
@@ -509,7 +510,7 @@ svg:hover{
         position: absolute;
         content: url(../img/index/icons/pop_arrow.svg);
         right: 5px;
-        top: 6px;
+        top: 8px;
     }
     a:hover{
         background-color: $grey;
@@ -805,5 +806,8 @@ svg:hover{
     }
     .pop_item_text_down{
         margin-top: 0;
+    }
+    .popular_cards_item{
+        margin: 8px 0;
     }
 }

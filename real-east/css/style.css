@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Обнуление */
 * {
-  -webkit-appearence: none; }
+  -webkit-appearence: none !important; }
 
 body {
   margin: 0;
@@ -108,10 +108,10 @@ h3 {
   margin-bottom: 25px; }
 
 .header a:hover {
-  color: #FECA36; }
+  color: orangered; }
 
 svg:hover {
-  fill: #FECA36; }
+  fill: orangered; }
 
 .container {
   max-width: 1560px;
@@ -252,7 +252,7 @@ svg:hover {
 
 .intro_button {
   font-size: 14px;
-  border: 2px solid #FECA36;
+  border: 2px solid orangered;
   display: inline-block;
   text-align: center;
   padding: 30px 0;
@@ -267,7 +267,7 @@ svg:hover {
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
-  background-color: #FECA36;
+  background-color: orangered;
   color: #464646; }
 
 .button_hover:hover {
@@ -296,7 +296,7 @@ svg:hover {
   fill: #fff; }
 
 .intro_icons_social svg:hover {
-  fill: #FECA36; }
+  fill: orangered; }
 
 .intro_icons_language {
   display: -webkit-box;
@@ -311,7 +311,7 @@ svg:hover {
     margin-left: 10px;
     cursor: pointer; }
   .intro_icons_language div:hover {
-    color: #FECA36; }
+    color: orangered; }
 
 .selected_language {
   border: 1px solid #fff; }
@@ -459,7 +459,7 @@ svg:hover {
   align-items: center;
   margin-bottom: 80px; }
   .popular_nav a {
-    background-color: #FECA36;
+    background-color: orangered;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
@@ -541,7 +541,7 @@ svg:hover {
     position: absolute;
     content: url(../img/index/icons/pop_arrow.svg);
     right: 5px;
-    top: 6px; }
+    top: 8px; }
   .pop_item_text_down a:hover {
     background-color: #EEEEEE; }
 
@@ -575,7 +575,7 @@ svg:hover {
     display: inline-block;
     width: 490px;
     padding: 30px 0;
-    background-color: #FECA36;
+    background-color: orangered;
     text-transform: uppercase;
     text-align: center;
     font-weight: 600; }
@@ -734,4 +734,6 @@ svg:hover {
   .pop_item_text_about {
     margin-bottom: 20px; }
   .pop_item_text_down {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .popular_cards_item {
+    margin: 8px 0; } }

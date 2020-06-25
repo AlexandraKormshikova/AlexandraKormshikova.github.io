@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 0;
-  font-family: "Graphik LCG", "Montserrat", sans-serif;
+  font-family: "Montserrat","Graphik LCG", sans-serif;
   color: #464646;
   font-size: 18px;
   line-height: 139%;
@@ -428,7 +428,7 @@ svg:hover {
   background-color: #EEEEEE;
   margin: 5px 7px;
   font-size: 1em;
-  font-family: 'Graphik LCG1', 'Montserrat', sans-serif;
+  font-family: 'Montserrat','Graphik LCG1', sans-serif;
   font-weight: 300;
   text-align: center;
   height: 100%;
@@ -593,6 +593,133 @@ svg:hover {
     text-align: center;
     font-weight: 600; }
 
+.districts {
+  width: 100%;
+  height: auto;
+  padding: 80px 0; }
+
+.districts_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.districts_content_item {
+  width: 50%; }
+
+.districts_text {
+  text-align: right;
+  width: 45%; }
+  .districts_text p {
+    margin-bottom: 10px; }
+  .districts_text .dist_a {
+    color: #FECA36;
+    position: relative;
+    padding-right: 15px; }
+  .districts_text .dist_a:hover {
+    text-decoration: underline; }
+  .districts_text .dist_a:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #FECA36;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 0;
+    border-left: 0;
+    top: 3px; }
+  .districts_text h2 {
+    text-align: right;
+    margin-bottom: 75px; }
+
+.districts_content_buttons {
+  margin-top: 70px; }
+
+.districts_content_button {
+  display: inline-block;
+  width: 288px;
+  text-align: center;
+  padding: 35px 0;
+  font-weight: 600;
+  margin: 10px;
+  position: relative; }
+
+.district_button_prev {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1); }
+
+.district_button_next {
+  background: #FECA36;
+  -webkit-box-shadow: 0px 15px 50px rgba(254, 202, 54, 0.5);
+  box-shadow: 0px 15px 50px rgba(254, 202, 54, 0.5); }
+
+.district_button_prev:after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 3px;
+  left: 55px;
+  top: 42px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 3px solid #000;
+  border-right: 3px solid transparent;
+  border-top: 3px solid transparent; }
+
+.district_button_next:after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 3px;
+  right: 55px;
+  top: 42px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 3px solid #000;
+  border-left: 3px solid transparent;
+  border-bottom: 3px solid transparent; }
+
+.districts_gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.districts_gallery_img {
+  max-width: 510px;
+  height: auto;
+  -webkit-box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25); }
+  .districts_gallery_img img {
+    width: 100%;
+    height: auto; }
+
+.districts_gallery_pict {
+  border: 2px solid #FECA36;
+  padding: 60px 35px;
+  width: 300px;
+  border-left: 0; }
+
+.districts_gallery_pict img {
+  width: 180px;
+  height: 120px;
+  margin: 5px; }
+
 /* addreses.html */
 .addres_content_wrap {
   height: 100vh;
@@ -641,6 +768,10 @@ svg:hover {
   .header_nav li {
     margin-left: auto; } }
 
+@media (max-width: 1380px) {
+  .districts_gallery_pict {
+    border: 2px solid #FECA36; } }
+
 @media (max-width: 1150px) {
   .popular_cards {
     -ms-flex-wrap: wrap;
@@ -670,7 +801,26 @@ svg:hover {
   .header_contacts {
     margin-right: 20px; }
   .select {
-    margin-top: -13vh; } }
+    margin-top: -13vh; }
+  .select_item p:after {
+    top: 4px; }
+  .districts_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .districts_content .districts_content_item {
+      width: 100%;
+      text-align: center; }
+      .districts_content .districts_content_item h2 {
+        text-align: center;
+        margin: 40px 0 20px; } }
 
 @media (max-width: 850px) {
   .intro_buttons {
@@ -739,7 +889,18 @@ svg:hover {
   h1 {
     font-size: 2.7em; }
     h1 span {
-      font-size: 18px; } }
+      font-size: 18px; }
+  .districts_gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .districts_content_item .dist_a:after {
+    top: 1px;
+    right: -5px; }
+  .district_button_next:after,
+  .district_button_prev:after {
+    top: 40px; } }
 
 @media (max-width: 382px) {
   .select_item {

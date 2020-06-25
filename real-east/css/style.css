@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   margin: 0;
-  font-family: "Montserrat","Graphik LCG", sans-serif;
+  font-family: "Noto Sans JP","Graphik LCG", sans-serif;
   color: #464646;
   font-size: 18px;
   line-height: 139%;
@@ -87,16 +87,20 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.05em;
   color: #fff;
-  font-weight: 700; }
-  h1 span {
+  font-weight: 900; }
+  h1 .b1 {
+    font-family: "Roboto","Graphik LCG", sans-serif;
     font-size: 0.7em;
     color: #EEEEEE;
     font-weight: 300;
     letter-spacing: normal; }
 
+.number {
+  font-family: "Roboto","Graphik LCG", sans-serif; }
+
 h2 {
   font-weight: bold;
-  font-size: 2.6em;
+  font-size: 2.4em;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -593,6 +597,64 @@ svg:hover {
     text-align: center;
     font-weight: 600; }
 
+/* consultation */
+.consultation {
+  width: 100%;
+  height: auto;
+  background: #f6f6f6 url(../img/index/consultation.png) no-repeat 100%;
+  padding: 50px 0;
+  border: 1px solid red; }
+
+.consultation_body {
+  width: 660px;
+  border: 1px solid red; }
+  .consultation_body h2 {
+    text-align: left; }
+  .consultation_body p {
+    margin: 35px 0; }
+
+.consultation_inputs {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .consultation_inputs input {
+    height: 80px;
+    width: 310px;
+    border: 1px solid green;
+    position: relative; }
+
+.consultation_input {
+  position: relative; }
+  .consultation_input label {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    color: #979797;
+    border: 1px solid orange;
+    width: 65%;
+    padding: 25px 0;
+    margin-left: 100px; }
+  .consultation_input label:before {
+    position: absolute;
+    content: '';
+    height: 24px;
+    width: 2px;
+    background-color: #FECA36;
+    top: 26px;
+    left: -20px; }
+
+/* districts */
 .districts {
   width: 100%;
   height: auto;
@@ -634,7 +696,7 @@ svg:hover {
     transform: rotate(45deg);
     border-bottom: 0;
     border-left: 0;
-    top: 3px; }
+    top: 40%; }
   .districts_text h2 {
     text-align: right;
     margin-bottom: 75px; }
@@ -667,7 +729,7 @@ svg:hover {
   width: 3px;
   height: 3px;
   left: 55px;
-  top: 42px;
+  top: 48%;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -681,7 +743,7 @@ svg:hover {
   width: 3px;
   height: 3px;
   right: 55px;
-  top: 42px;
+  top: 48%;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);

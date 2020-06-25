@@ -20,6 +20,10 @@ $yellow: #FECA36;
 $black: #464646;
 $grey: #EEEEEE;
 
+*{
+    -webkit-appearence: none;
+}
+
 body{
     margin: 0;
     font-family: 'Graphik LCG', 'Montserrat', sans-serif;
@@ -399,7 +403,6 @@ svg:hover{
         height: 100%;
         display: inline-block;
         padding: 30px 0;
-        -webkit-appearence: none;
     }
 }
 

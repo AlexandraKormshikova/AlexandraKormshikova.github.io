@@ -717,7 +717,16 @@ svg:hover {
     height: auto;
     margin-bottom: 30px; }
     .addres_content_wrap .content {
-      padding: 20px; } }
+      padding: 20px; }
+  .popular_button {
+    width: 100%;
+    margin: 60px 0; }
+    .popular_button .button_hover {
+      width: 100%; }
+  h1 {
+    font-size: 2.7em; }
+    h1 span {
+      font-size: 18px; } }
 
 @media (max-width: 382px) {
   .select_item {

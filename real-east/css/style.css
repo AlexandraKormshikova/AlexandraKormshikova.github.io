@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Обнуление */
 body {
   margin: 0;
-  font-family: 'Graphik LCG', sans-serif;
+  font-family: 'Graphik LCG', 'Montserrat', sans-serif;
   color: #464646;
   font-size: 18px;
   line-height: 139%;
@@ -426,7 +426,7 @@ svg:hover {
   .select_item select {
     background-color: #EEEEEE;
     font-size: 1em;
-    font-family: 'Graphik LCG1', sans-serif;
+    font-family: 'Graphik LCG1', 'Montserrat', sans-serif;
     color: #464646;
     font-weight: 300;
     text-align: center;

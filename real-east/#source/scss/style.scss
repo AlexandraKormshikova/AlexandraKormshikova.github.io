@@ -22,11 +22,12 @@ $grey: #EEEEEE;
 
 *{
     -webkit-appearence: none !important;
+    transition: .2s;
 }
 
 body{
     margin: 0;
-    font-family: "Noto Sans JP","Graphik LCG", sans-serif;
+    font-family: "Conv_GraphikLCG", sans-serif;
     color: #464646;
     font-size: 18px;
     line-height: 139%;
@@ -54,16 +55,12 @@ h1{
     color: #fff;
     font-weight: 900;
     .b1{
-        font-family: "Roboto","Graphik LCG", sans-serif;
-        font-size: 0.7em;
+        font-family: "Conv_GraphikLCG", sans-serif;
+        font-size: 72px;
         color: $grey;
         font-weight: 300;
         letter-spacing: normal;
     }
-}
-
-.number{
-    font-family: "Roboto","Graphik LCG", sans-serif;
 }
 
 h2{
@@ -400,7 +397,7 @@ svg:hover{
     background-color: $grey;
     margin: 5px 7px;
     font-size: 1em;
-    font-family: 'Montserrat','Graphik LCG1', sans-serif;
+    font-family: "Conv_GraphikLCG", sans-serif;
     font-weight: 300;
     text-align: center;
     height: 100%;
@@ -602,10 +599,12 @@ svg:hover{
     justify-content: space-between;
     align-items: center;
     input{
-        height: 78px;
-        width: 210px;
+        font-family: "Conv_GraphikLCG", sans-serif;
+        height: 75px;
+        width: 205px;
         position: relative;
         margin-left: 98px;
+        font-size: 18px;
     }
     button{
         width: 310px;
@@ -641,14 +640,6 @@ svg:hover{
     background-color: $yellow;
     top: 26px;
     left: 77px;
-}
-
-.consultation_input{
-    input:invalid + label,
-    input:focus + label{
-        display: none;
-        color: #fff;
-    }
 }
 
 .label_name,
@@ -812,8 +803,8 @@ svg:hover{
 
 .services{
     width: 100%;
-    height: 1000px;
-    background: #ececec url(../../img/index/services.png) no-repeat 100%;
+    height: auto;
+    background: #f6f6f6 url(../../img/index/services.png) no-repeat 100% bottom;
     padding: 120px 0;
     h2{
         text-align: left;
@@ -889,10 +880,129 @@ svg:hover{
     }
 }
 
+/* stages */
 
+.stages_main{
+    padding: 120px 0;
+    h2{
+        text-align: right;
+    }
+}
 
+.stages_content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    justify-content: space-between;
+    h3{
+        display: inline-block;
+        width: 380px;
+        line-height: 146%;
+        margin-right: -50px;
+        margin-bottom: 0;
+    }
+}
 
+.stages_item{
+    width: 30%;
+    height: 300px;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
+.stages_item1{
+    background: url(../img/index/icons/stages_item1.svg) no-repeat;
+}
+.stages_item2{
+    background: url(../img/index/icons/stages_item2.svg) no-repeat;
+}
+.stages_item3{
+    background: url(../img/index/icons/stages_item3.svg) no-repeat;
+}
+.stages_item4{
+    background: url(../img/index/icons/stages_item4.svg) no-repeat;
+}
+.stages_item5{
+    background: url(../img/index/icons/stages_item5.svg) no-repeat;
+}
+.stages_item6{
+    background: url(../img/index/icons/stages_item6.svg) no-repeat;
+}
+
+/* consultation_2 */
+
+.consultation_2block{
+    width: 100%;
+    height: auto;
+    background-color: #f6f6f6;
+    padding: 120px 0;
+    .consultation_body{
+        width: 380px;
+        .button_hover{
+            margin-top: 35px;
+            width: 100%;
+        }
+    }
+    .consultation_input{
+        width: 100%;
+        input{
+            width: 60%;
+        }
+    }
+}
+
+.consultation_2block_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consultation_2block_body_text{
+    max-width: 1000px;
+    background-color: #fff;
+    height: auto;
+    padding: 164px 120px;
+    font-weight: 300;
+    line-height: 146%;
+    margin-left: 50px;
+    font-family: "Conv_GraphikLCG", sans-serif;
+    font-size: 1.1em;
+    h3{
+        line-height: 110%;
+    }
+}
+
+/* faq */
+
+.faq{
+    padding: 120px 0;
+}
+
+.faq_body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    h2{
+        font-size: 1.7em;
+        line-height: 130%;
+        text-align: left;
+    }
+    &_item{
+        width: 48%;
+        border: 1px solid red;
+    }
+    .popular_cards_item{
+        width: 48%;
+        h3{
+            font-size: 1.4em;
+            line-height: 120%;
+        }
+    }
+}
 
 
 
@@ -930,7 +1040,7 @@ svg:hover{
 
 
 
-@media(min-width: 2450px){
+@media(min-width: 2550px){
     .consultation,
     .services{
         width: 2100px;
@@ -940,10 +1050,10 @@ svg:hover{
 
 @media(max-width: 1540px){
     body{
-        font-size: calc(11px + 6*(100vw / 1920));
+        font-size: calc(13px + 6*(100vw / 1920));
     }
     h1{
-        font-size: calc(22px + 71*(100vw / 1920));
+        font-size: calc(23px + 72*(100vw / 1920));
     }
     h2{
         font-size: calc(18px + 30*(100vw / 1920));
@@ -977,6 +1087,9 @@ svg:hover{
     .popular_cards_item{
         width: 48%;
         margin-bottom: 20px;
+    }
+    .consultation_2block_body_text{
+        padding: 80px 50px;
     }
 }
 
@@ -1031,6 +1144,16 @@ svg:hover{
     }
 }
 
+@media(max-width: 960px){
+    .stages_item{
+        width: 45%;
+        h3{
+            width: auto;
+            margin-right: 0;
+        }
+    }
+}
+
 @media(max-width: 850px){
     .intro_buttons{
         text-align: center;
@@ -1069,6 +1192,17 @@ svg:hover{
     .consultation_body{
         max-width: 640px;
     }
+    .consultation_2block_body{
+        flex-direction: column;
+        .consultation_body{
+            width: 100%;
+        }
+        &_text{
+            width: 100%;
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
 }
 
 @media(max-width: 670px){
@@ -1088,6 +1222,17 @@ svg:hover{
         .consultation_input{
             width: 100%;
             margin-bottom: 30px;
+        }
+    }
+    .stages_item{
+        width: 100%;
+        height: 250px;
+    }
+    .consultation_2block_body{
+        .consultation_inputs{
+            .button_hover{
+                margin-top: 0;
+            }
         }
     }
 }
@@ -1148,8 +1293,8 @@ svg:hover{
     }
     h1{
         font-size: 2.7em;
-        span{
-            font-size: 18px;
+        .b1{
+            font-size: 0.55em;
         }
     }
     .districts_gallery{
@@ -1165,9 +1310,6 @@ svg:hover{
     .district_button_prev:after{
         top: 40px;
     }
-    .number{
-        font-size: inherit;
-    }
     .services{
         height: auto;
     }
@@ -1176,6 +1318,9 @@ svg:hover{
     }
     .services_slider_item{
         margin-bottom: 40px;
+    }
+    .consultation_2block{
+        padding: 60px 0;
     }
 }
 
@@ -1216,5 +1361,8 @@ svg:hover{
     .consultation_body{
         margin: 0;
         width: 100%;
+    }
+    .consultation_2block_body_text{
+        padding: 30px;
     }
 }

@@ -213,7 +213,7 @@ svg:hover {
   height: 110vh;
   min-height: 600px;
   padding-bottom: 20px;
-  background: url(../img/index/bg.png) no-repeat top/cover; }
+  background: url(../img/index/bg.jpg) no-repeat top/cover; }
   .intro .container {
     height: 100%; }
 
@@ -602,16 +602,19 @@ svg:hover {
   width: 100%;
   height: auto;
   background: #f6f6f6 url(../img/index/consultation.png) no-repeat 100%;
-  padding: 50px 0;
-  border: 1px solid red; }
+  padding: 50px 0; }
 
 .consultation_body {
-  width: 660px;
-  border: 1px solid red; }
+  width: 660px; }
   .consultation_body h2 {
     text-align: left; }
   .consultation_body p {
     margin: 35px 0; }
+
+.consultation_input {
+  height: 80px;
+  width: 310px;
+  border: 1px solid #c2c2c2; }
 
 .consultation_inputs {
   width: 100%;
@@ -628,31 +631,68 @@ svg:hover {
   -ms-flex-align: center;
   align-items: center; }
   .consultation_inputs input {
-    height: 80px;
+    height: 78px;
+    width: 210px;
+    position: relative;
+    margin-left: 98px; }
+  .consultation_inputs button {
     width: 310px;
-    border: 1px solid green;
-    position: relative; }
+    height: 80px;
+    text-align: center;
+    background-color: #FECA36;
+    color: #464646;
+    font-weight: 700; }
 
 .consultation_input {
-  position: relative; }
+  position: relative;
+  background-color: #fff; }
   .consultation_input label {
     position: absolute;
     z-index: 9;
     top: 0;
     left: 0;
     color: #979797;
-    border: 1px solid orange;
-    width: 65%;
+    width: auto;
     padding: 25px 0;
-    margin-left: 100px; }
-  .consultation_input label:before {
-    position: absolute;
-    content: '';
-    height: 24px;
-    width: 2px;
-    background-color: #FECA36;
-    top: 26px;
-    left: -20px; }
+    margin-left: 100px;
+    pointer-events: none; }
+
+.consultation_input:before {
+  position: absolute;
+  content: '';
+  height: 24px;
+  width: 2px;
+  background-color: #FECA36;
+  top: 26px;
+  left: 77px; }
+
+.consultation_input input:invalid + label,
+.consultation_input input:focus + label {
+  display: none;
+  color: #fff; }
+
+.label_name,
+.label_phone {
+  position: relative;
+  margin-bottom: 30px; }
+
+.label_name::after {
+  position: absolute;
+  content: url(../img/index/icons/user_name.svg);
+  top: 25px;
+  left: 25px; }
+
+.label_mail::after {
+  position: absolute;
+  content: url(../img/index/icons/user_mail.svg);
+  top: 25px;
+  left: 25px; }
+
+.label_phone::after {
+  position: absolute;
+  content: url(../img/index/icons/user_phone.svg);
+  top: 25px;
+  left: 25px; }
 
 /* districts */
 .districts {
@@ -782,6 +822,83 @@ svg:hover {
   height: 120px;
   margin: 5px; }
 
+/* services */
+.services {
+  width: 100%;
+  height: 1000px;
+  background: #ececec url(../../img/index/services.png) no-repeat 100%;
+  padding: 120px 0; }
+  .services h2 {
+    text-align: left; }
+  .services h3 {
+    margin-bottom: 15px; }
+
+.services_slider {
+  background-color: #fff;
+  padding: 66px 75px;
+  max-width: 767px;
+  margin-top: 90px; }
+
+.services_slider_item {
+  margin-bottom: 80px;
+  position: relative;
+  padding-left: 80px;
+  background: url(../img/index/icons/services-phone.svg) 0 50% no-repeat; }
+
+.services_slider_item.services-search {
+  background: url(../img/index/icons/services-search.svg) 0 50% no-repeat; }
+
+.services_slider_item.services-land {
+  background: url(../img/index/icons/services-land.svg) 0 50% no-repeat; }
+
+.services_slider_nav {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .services_slider_nav .arrow_back {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FECA36;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: 0;
+    border-right: 0;
+    position: relative; }
+  .services_slider_nav .arrow_next {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FECA36;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: 0;
+    border-left: 0;
+    position: relative; }
+  .services_slider_nav .arrow_back:before,
+  .services_slider_nav .arrow_next:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #EEEEEE;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .services_slider_nav .arrow_back:before {
+    background-color: #FECA36;
+    right: -20px;
+    top: -20px; }
+  .services_slider_nav .arrow_next:before {
+    right: 40px;
+    top: 40px; }
+
 /* addreses.html */
 .addres_content_wrap {
   height: 100vh;
@@ -813,6 +930,12 @@ svg:hover {
     font-size: 1.5em;
     margin: 50px 0;
     line-height: 110%; }
+
+@media (min-width: 2450px) {
+  .consultation,
+  .services {
+    width: 2100px;
+    margin: 0 auto; } }
 
 @media (max-width: 1540px) {
   body {
@@ -907,12 +1030,26 @@ svg:hover {
   .popular_nav {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .consultation {
+    background: #f6f6f6 url(../img/index/consultation_mob.png) no-repeat top/cover; }
+  .consultation_body {
+    max-width: 640px; } }
 
 @media (max-width: 670px) {
   .popular_cards_item {
     width: 100%;
-    margin: 7px 7px 20px; } }
+    margin: 7px 7px 20px; }
+  .consultation_body {
+    margin: 0 20px;
+    width: 93%; }
+    .consultation_body button {
+      width: 100%; }
+    .consultation_body input {
+      width: auto; }
+    .consultation_body .consultation_input {
+      width: 100%;
+      margin-bottom: 30px; } }
 
 @media (max-width: 570px) {
   .intro {
@@ -962,7 +1099,21 @@ svg:hover {
     right: -5px; }
   .district_button_next:after,
   .district_button_prev:after {
-    top: 40px; } }
+    top: 40px; }
+  .number {
+    font-size: inherit; }
+  .services {
+    height: auto; }
+  .services_slider {
+    padding: 40px 30px; }
+  .services_slider_item {
+    margin-bottom: 40px; } }
+
+@media (max-width: 450px) {
+  .services {
+    padding: 60px 0; }
+    .services .services_slider {
+      margin-top: 40px; } }
 
 @media (max-width: 382px) {
   .select_item {
@@ -981,4 +1132,7 @@ svg:hover {
   .pop_item_text_down {
     margin-top: 0; }
   .popular_cards_item {
-    margin: 8px 0; } }
+    margin: 8px 0; }
+  .consultation_body {
+    margin: 0;
+    width: 100%; } }

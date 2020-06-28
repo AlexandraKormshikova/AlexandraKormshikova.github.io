@@ -1293,6 +1293,71 @@ svg:hover{
     }
 }
 
+/* gallery.html */
+
+.gallery{
+    h2{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .gallery_infrastructure{
+        padding: 90px 0;
+        background-color: #F6F6F6;
+        &_info{
+            background: #FFFFFF;
+            box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+            padding: 60px 65px;
+            width: 47%;
+            height: auto;
+            span{
+                font-size: 1.1em;
+                font-weight: 300;
+            }
+            div{
+                width: auto;
+                height: 50px;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                svg{
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        &_text{
+            margin-right: 40px;
+            h3{
+                font-size: 1.3em;
+            }
+        }
+    }
+    .gallery_infrastrucrure_body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .consultation_body{
+        width: 100%;
+    }
+}
+
+.gallery_comment{
+    padding: 100px 0;
+}
+
+.gallery_comment_content{
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    padding: 80px 100px;
+    box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
 
 
 /* footer */
@@ -1337,6 +1402,13 @@ footer{
     justify-content: space-between;
     &_item{
         margin: 0 3px;
+    }
+}
+
+.type_list{
+    .type_list_cols,
+    .type_list_rows{
+        cursor: pointer;
     }
 }
 
@@ -1522,6 +1594,17 @@ footer{
     }
     .reviews_slider_wrap{
         margin: 0;
+    }
+    .gallery_infrastructure_text{
+        width: 100%;
+        margin: 0 !important;
+    }
+    .gallery_infrastrucrure_body{
+        flex-direction: column;
+    }
+    .gallery_infrastructure_info{
+        margin-top: 40px;
+        width: 100% !important;
     }
 }
 
@@ -1748,6 +1831,10 @@ footer{
         width: 70px;
         height: 70px;
     }
+    .gallery_infrastructure_info{
+        padding: 40px 30px !important;
+    }
+
 }
 
 @media(max-width: 450px){
@@ -1809,12 +1896,5 @@ footer{
                 padding: 30px 10px;
             }
         }
-    }
-}
-
-.type_list{
-    .type_list_cols,
-    .type_list_rows{
-        cursor: pointer;
     }
 }

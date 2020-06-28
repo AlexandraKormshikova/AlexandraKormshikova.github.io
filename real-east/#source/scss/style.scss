@@ -1341,6 +1341,32 @@ svg:hover{
     .consultation_body{
         width: 100%;
     }
+    .consultation_inputs{
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    .consultation_inputs_item2{
+        width: 70%;
+        margin-left: 20px;
+    }
+    .label_mail{
+        margin-bottom: 30px;
+        textarea{
+            width: 100%;
+            height: 190px;
+            border: 1px solid #A7A7A7;
+            padding: 30px;
+            font-size: 1em;
+        }
+    }
+    .consultation_body{
+        margin-left: 0;
+    }
+}
+
+form{
+    position: absolute;
 }
 
 .gallery_comment{
@@ -1461,6 +1487,11 @@ footer{
 @media(max-width: 1380px){
     .districts_gallery_pict{
         border: 2px solid $yellow;
+    }
+    .gallery{
+        .gallery_comment_content{
+            padding: 60px 40px;
+        }
     }
 }
 
@@ -1713,6 +1744,15 @@ footer{
             }
         }
     }
+    .gallery{
+        .consultation_inputs{
+            flex-direction: column;
+        }
+        .consultation_inputs_item2{
+            width: 100%;
+            margin-left: 0;
+        }
+    }
 }
 
 @media(max-width: 570px){
@@ -1844,6 +1884,11 @@ footer{
             margin-top: 40px;
         }
     }
+    .gallery{
+        .gallery_comment_content{
+            padding: 40px 20px;
+        }
+    }
 }
 
 @media(max-width: 382px){
@@ -1894,6 +1939,15 @@ footer{
         .popular_cards_item{
             .pop_item_text{
                 padding: 30px 10px;
+            }
+        }
+    }
+    .gallery{
+        .consultation_input{
+            input{
+                width: 100%;
+                margin: 0;
+                padding-left: 80px;
             }
         }
     }

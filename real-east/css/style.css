@@ -1380,6 +1380,35 @@ svg:hover {
 .gallery .consultation_body {
   width: 100%; }
 
+.gallery .consultation_inputs {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
+
+.gallery .consultation_inputs_item2 {
+  width: 70%;
+  margin-left: 20px; }
+
+.gallery .label_mail {
+  margin-bottom: 30px; }
+  .gallery .label_mail textarea {
+    width: 100%;
+    height: 190px;
+    border: 1px solid #A7A7A7;
+    padding: 30px;
+    font-size: 1em; }
+
+.gallery .consultation_body {
+  margin-left: 0; }
+
+form {
+  position: absolute; }
+
 .gallery_comment {
   padding: 100px 0; }
 
@@ -1467,7 +1496,9 @@ footer {
 
 @media (max-width: 1380px) {
   .districts_gallery_pict {
-    border: 2px solid #FECA36; } }
+    border: 2px solid #FECA36; }
+  .gallery .gallery_comment_content {
+    padding: 60px 40px; } }
 
 @media (max-width: 1346px) {
   .header_nav li {
@@ -1651,7 +1682,15 @@ footer {
     width: 100%;
     height: 250px; }
   .consultation_2block_body .consultation_inputs .button_hover {
-    margin-top: 0; } }
+    margin-top: 0; }
+  .gallery .consultation_inputs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .gallery .consultation_inputs_item2 {
+    width: 100%;
+    margin-left: 0; } }
 
 @media (max-width: 570px) {
   .intro {
@@ -1748,7 +1787,9 @@ footer {
   .services {
     padding: 60px 0; }
     .services .services_slider {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  .gallery .gallery_comment_content {
+    padding: 40px 20px; } }
 
 @media (max-width: 382px) {
   .select_item {
@@ -1782,4 +1823,8 @@ footer {
     .pop_item_text_title-video p {
       display: none; }
   .search2 .popular_cards_item .pop_item_text {
-    padding: 30px 10px; } }
+    padding: 30px 10px; }
+  .gallery .consultation_input input {
+    width: 100%;
+    margin: 0;
+    padding-left: 80px; } }

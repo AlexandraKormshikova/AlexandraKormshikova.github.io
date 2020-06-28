@@ -233,20 +233,26 @@
                             <p>Заполните поля ниже и нажмите кнопку "Отправить"</p>
             
                             <div class="consultation_inputs">
-                                <div class="consultation_input label_name">
+                                <form action="" method="post"></form>
+                                <div class="consultation_inputs_item">
+                                    <div class="consultation_input label_name">
             
-                                    <input type="text" name="name" value="" placeholder="Имя">
+                                        <input type="text" name="name" value="" placeholder="Имя">
+                                    </div>
+                
+                                    <div class="consultation_input label_phone">
+                                        <input type="tel" name="phone" value="" placeholder="Телефон">
+                                    </div>
                                 </div>
             
-                                <div class="consultation_input label_phone">
-                                    <input type="tel" name="phone" value="" placeholder="Телефон">
+                                <div class="consultation_inputs_item2">
+                                    <div class="label_mail">
+                                        <textarea name="comment" id="gallery_comment" placeholder="Ваш комментарий"></textarea>
+                                    </div>
+                
+                                    <button type="submit" name="button" class="button_hover">ОТПРАВИТЬ</button>
                                 </div>
-            
-                                <div class="consultation_input label_mail">
-                                    <input type="email" name="mail" value="" placeholder="E-mail">
-                                </div>
-            
-                                <button type="submit" name="button" class="button_hover">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                                </form>
                             </div>
                         </div>
                     </div>

@@ -56,7 +56,8 @@ h1{
     font-weight: 900;
     .b1{
         font-family: "Conv_GraphikLCG", sans-serif;
-        font-size: 72px;
+        font-size: 0.78em;
+        // font-size: 72px;
         color: $grey;
         font-weight: 300;
         letter-spacing: normal;
@@ -66,7 +67,7 @@ h1{
 h2{
     font-weight: bold;
     font-size: 2.4em;
-    // letter-spacing: 0.05em;
+    letter-spacing: 0.05em;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -131,9 +132,9 @@ svg:hover{
     flex-direction: column;
     align-items: flex-end;
     margin: 0 40px 0 0;
-    font-weight: 500;
     a{
         margin: 3px;
+        font-weight: 500;
     }
     .yellow{
         font-size: 14px;
@@ -225,7 +226,7 @@ svg:hover{
     width: 390px;
     height: auto;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.05em;
     margin: 10px;
 }
@@ -974,6 +975,25 @@ svg:hover{
     }
 }
 
+.reviews_slider_item_name{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+.slider_item_name_name{
+    margin-left: 30px;
+    font-weight: 600;
+    font-size: 1.25em;
+    letter-spacing: 0.05em;
+}
+
+.slider_item_name_avatar{
+    background-color: #c4c4c4;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
 /* faq */
 
 .faq{
@@ -990,19 +1010,47 @@ svg:hover{
         font-size: 1.7em;
         line-height: 130%;
         text-align: left;
+        margin-bottom: 50px;
     }
     &_item{
-        width: 48%;
-        border: 1px solid red;
+        width: 49%;
     }
     .popular_cards_item{
-        width: 48%;
+        width: 48.5%;
+        line-height: 155%;
+        box-shadow: none;
         h3{
-            font-size: 1.4em;
+            font-size: 1.35em;
             line-height: 120%;
         }
     }
+    .pop_item_img{
+        height: 200px;
+    }
+    .pop_item_text{
+        padding: 40px 0 0;
+        .pop_item_deck{
+            height: 85px;
+        }
+    }
+    .pop_item_text_down{
+        margin-top: 20px;
+        .yellow{
+            padding-left: 0;
+        }
+    }
 }
+
+.reviews_slider_wrap{
+    margin-top: 86px;
+}
+
+.reviews_slider_item_text{
+    width: 100%;
+    padding: 90px 80px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+}
+
 
 
 
@@ -1037,7 +1085,223 @@ svg:hover{
     }
 }
 
+/* search1.html */
 
+.search1{
+    .header{
+        color: #464646;
+    }
+
+    &_wrap{
+        box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.06);
+    }
+
+    &_intro_main{
+
+        h1{
+            color: #464646;
+            font-size: 64px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 80px 0;
+        }
+    }
+
+    .select{
+        margin-top: 0;
+        box-shadow: none;
+    }
+
+    .popular_cards{
+        flex-wrap: wrap;
+
+        &_item{
+            width: 31.5%;
+            margin: 30px 0;
+        }
+    }
+    .pop_item_text_title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h3{
+        margin-bottom: 0;
+    }
+}
+
+.type_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 40px 0 70px;
+    svg:hover{
+        fill: none;
+    }
+}
+
+.pop_item_text_title-video{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.pop_item_text_title{
+    margin-bottom: 25px;
+}
+
+.pop_item_text_title-video:before{
+    position: absolute;
+    content: '';
+    background-color: $yellow;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: -35px;
+}
+
+.pop_item_text_title-video:after{
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    left: -27px;
+    border: 5px solid #fff;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    transform: rotate(-45deg);
+}
+
+.page_number{
+    margin: 80px auto 110px;
+    width: 200px;
+    text-align: center;
+    font-size: 1.3em;
+    position: relative;
+    a{
+        margin: 0 2px;
+        padding: 8px;
+    }
+    &_active{
+        border-bottom: 1px solid $yellow;
+    }
+}
+
+.page_number:before,
+.page_number:after{
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #7b7b7b;
+    transform: rotate(45deg);
+    cursor: pointer;
+    top: 4px;
+}
+
+.page_number:before{
+    border-right: 0;
+    border-top: 0;
+    left: -10px;
+}
+
+.page_number:after{
+    border-bottom: 0;
+    border-left: 0;
+}
+
+
+/* search2.html */
+
+.search2{
+    .popular_cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pop_item_text_title-video{
+        margin-left: 40px;
+    }
+    .popular_cards_item{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 30px 0;
+        .pop_item_img{
+            width: 40%;
+            height: 100%;
+        }
+        .pop_item_text{
+            width: 60%;
+            padding: 80px 110px;
+        }
+        .pop_item_text_about{
+            max-width: 800px;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .pop_item_text_about_main{
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: auto;
+    padding: 102px 0;
+    background: #2B2B2B;
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.75em;
+    color: #bbb;
+    .container{
+        max-width: 1563px;
+    }
+    h3{
+        font-size: 2em;
+        font-weight: 500;
+        line-height: 105%;
+        text-align: left;
+        padding-bottom: 50px;
+        color: #fff;
+    }
+}
+
+.footer_body{
+    display: flex;
+    justify-content: space-between;
+    &_logo{
+        margin-left: -100px;
+    }
+    &_turk,
+    &_ukr{
+        width: 46%;
+    }
+}
+
+.footer_body_ukr_body,
+.footer_body_turk_body{
+    display: flex;
+    justify-content: space-between;
+    &_item{
+        margin: 0 3px;
+    }
+}
 
 
 @media(min-width: 2550px){
@@ -1045,6 +1309,18 @@ svg:hover{
     .services{
         width: 2100px;
         margin: 0 auto;
+    }
+}
+
+@media(max-width: 1880px){
+    .footer_body_logo{
+        margin-left: 0;
+    }
+    .footer_body{
+        &_turk,
+        &_ukr{
+            width: 44%;
+        }
     }
 }
 
@@ -1064,6 +1340,19 @@ svg:hover{
     .select{
         margin-top: -40px;
     }
+    .search1{
+        &_intro_main{
+            h1{
+                font-size: calc(23px + 41*(100vw / 1920));
+            }
+        }
+    }
+}
+
+@media(max-width: 1380px){
+    .districts_gallery_pict{
+        border: 2px solid $yellow;
+    }
 }
 
 @media(max-width: 1310px){
@@ -1072,11 +1361,21 @@ svg:hover{
             margin-left: auto;
         }
     }
-}
-
-@media(max-width: 1380px){
-    .districts_gallery_pict{
-        border: 2px solid $yellow;
+    footer{
+        padding: 50px 0;
+    }
+    .footer_body{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3{
+            text-align: center;
+        }
+        &_turk,
+        &_ukr{
+            width: 60%;
+            margin-top: 25px;
+        }
     }
 }
 
@@ -1090,6 +1389,20 @@ svg:hover{
     }
     .consultation_2block_body_text{
         padding: 80px 50px;
+    }
+    .search1{
+        .popular_cards{
+            &_item{
+                width: 49%;
+            }
+        }
+    }
+    .search2{
+        .popular_cards_item{
+            .pop_item_text{
+                padding: 35px;
+            }
+        }
     }
 }
 
@@ -1142,6 +1455,12 @@ svg:hover{
             }
         }
     }
+    .footer_body{
+        &_turk,
+        &_ukr{
+            width: 80%;
+        }
+    }
 }
 
 @media(max-width: 960px){
@@ -1151,6 +1470,21 @@ svg:hover{
             width: auto;
             margin-right: 0;
         }
+    }
+    .reviews_slider_item_text{
+        padding: 50px 40px;
+    }
+    .faq_body{
+        flex-direction: column;
+        &_item{
+            width: 100%;
+            .popular_cards_item{
+                width: 46%;
+            }
+        }
+    }
+    .reviews_slider_wrap{
+        margin: 0;
     }
 }
 
@@ -1201,6 +1535,30 @@ svg:hover{
             width: 100%;
             margin-left: 0;
             margin-top: 50px;
+        }
+    }
+    .search1{
+        .popular_cards{
+            &_item{
+                width: 100%;
+            }
+        }
+    }
+    .footer_body{
+        &_turk,
+        &_ukr{
+            width: 95%;
+        }
+    }
+    .search2{
+        .popular_cards_item{
+            flex-direction: column;
+            .pop_item_img{
+                width: 100%;
+            }
+            .pop_item_text{
+                width: 100%;
+            }
         }
     }
 }
@@ -1292,7 +1650,7 @@ svg:hover{
         }
     }
     h1{
-        font-size: 2.7em;
+        font-size: 2.3em;
         .b1{
             font-size: 0.55em;
         }
@@ -1321,6 +1679,37 @@ svg:hover{
     }
     .consultation_2block{
         padding: 60px 0;
+    }
+    .footer_body_turk_body,
+    .footer_body_ukr_body{
+        flex-direction: column;
+        &_item{
+            margin: 5px 0;
+        }
+    }
+    .footer_body{
+        flex-direction: row;
+        align-items: flex-start;
+        h3{
+            padding-bottom: 15px;
+        }
+    }
+    .footer_body_logo{
+        position: absolute;
+    }
+    .footer_body_turk,
+    .footer_body_ukr{
+        margin-top: 100px;
+    }
+    .faq{
+        padding: 60px 0;
+        .popular_cards_item{
+            width: 100%;
+        }
+    }
+    .slider_item_name_avatar{
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -1364,5 +1753,24 @@ svg:hover{
     }
     .consultation_2block_body_text{
         padding: 30px;
+    }
+    .pop_item_price{
+        font-size: 1.4em;
+    }
+    .pop_item_text{
+        padding: 30px 18px;
+    }
+    .pop_item_text_title-video{
+        margin: 0;
+        p{
+            display: none;
+        }
+    }
+    .search2{
+        .popular_cards_item{
+            .pop_item_text{
+                padding: 30px 10px;
+            }
+        }
     }
 }

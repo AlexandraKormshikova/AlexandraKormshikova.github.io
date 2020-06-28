@@ -1406,6 +1406,9 @@ svg:hover {
 .gallery .consultation_body {
   margin-left: 0; }
 
+.gallery .label_mail:after {
+  display: none; }
+
 form {
   position: absolute; }
 

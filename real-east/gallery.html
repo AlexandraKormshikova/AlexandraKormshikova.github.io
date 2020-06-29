@@ -124,6 +124,56 @@
         </div>
     </div>
 
+    <section class="gallery_gallery">
+        <div class="container">
+            <div class="gallery_main">
+                <div class="gallery_main_photos" id="thumbs">
+                    <div class="gallery_main_photos_big">
+                        <img id="largeImg" src="img/gallery/sarah-boudreau-uMouhK2cGPM-unsplash.jpg" alt="">
+                    </div>
+                    <div class="gallery_main_photos_small">
+                        <div class="small_photo">
+                            <a href="img/gallery/antonio-janeski-VF1DjErS9QM-unsplash.jpg"><img src="img/gallery/antonio-janeski-VF1DjErS9QM-unsplash.jpg" alt=""></a>
+                        </div>
+                        <div class="small_photo">
+                            <a href="img/gallery/jacalyn-beales-em3LofJDaGI-unsplash.jpg"><img src="img/gallery/jacalyn-beales-em3LofJDaGI-unsplash.jpg" alt=""></a>
+                        </div>
+                        <div class="small_photo">
+                            <a href="img/gallery/sarah-boudreau-uMouhK2cGPM-unsplash.jpg"><img src="img/gallery/sarah-boudreau-uMouhK2cGPM-unsplash.jpg" alt=""></a>
+                        </div>
+                        <div class="small_photo">
+                            <a href="img/gallery/talia-Sbm6iD6wklU-unsplash.jpg"><img src="img/gallery/talia-Sbm6iD6wklU-unsplash.jpg" alt=""></a>
+                        </div>
+                        <div class="small_photo">
+                            <a href="img/gallery/jonas-ducker-SN5tt-oozVI-unsplash.jpg"><img src="img/gallery/jonas-ducker-SN5tt-oozVI-unsplash.jpg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery_main_text">
+                    <h2>Квартиры планировки 3+1 и 4+1 в новом комплексе с развитой инфраструктурой, в каждой квартире вид на море</h2>
+                    <div class="gallery_main_info">
+                        <p>ID: 12345</p>
+                        <p>Тип: Квартира</p>
+                        <p>Площадь: 127 (м2)</p>
+                        <p>Кол-во комнат: 3+1</p>
+                        <p>Этаж: 5 из 25</p>
+                        <p>Отопление: центральное</p>
+                        <p>Состояние: пустая</p>
+                    </div>
+                    <div class="pop_item_text_title-video">
+                        <p>Видео</p>
+                    </div>
+                    <div class="consultation_inputs">
+                        <div class="consultation_input label_phone">
+                            <input type="tel" name="phone" value="" placeholder="Телефон">
+                        </div>
+                        <button type="submit" name="button" class="button_hover">ПОЛУЧИТЬ ИНФОРМАЦИЮ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="gallery_infrastructure">
         <div class="container">
             <div class="gallery_infrastrucrure_body">
@@ -319,5 +369,18 @@
     </footer>
 
     <script src="js/style.js"></script>
+    <script>
+        thumbs.onclick = function(event) {
+          let thumbnail = event.target.closest('a');
+    
+          if (!thumbnail) return;
+          showThumbnail(thumbnail.href, thumbnail.title);
+          event.preventDefault();
+        }
+    
+        function showThumbnail(href, title) {
+          largeImg.src = href;
+        }
+      </script>
 </body>
 </html>

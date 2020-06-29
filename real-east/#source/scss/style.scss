@@ -320,6 +320,14 @@ svg:hover{
     left: 0;
 }
 
+.gallery{
+    .mob_menu_lines,
+    .mob_menu_lines:after,
+    .mob_menu_lines:before{
+        background-color: #808080;
+    }
+}
+
 .mob_menu_lines:before{
     top: -10px;
 }
@@ -1366,6 +1374,75 @@ svg:hover{
     .label_mail:after{
         display: none;
     }
+    .gallery_main{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0;
+        &_text{
+            width: 40%;
+            margin-left: 50px;
+            h2{
+                font-size: 2em;
+            }
+            .pop_item_text_title-video{
+                margin-left: 40px;
+                font-weight: 300;
+                margin-top: 60px;
+                font-size: 1.2em;
+                p{
+                    margin-left: 10px;
+                }
+            }
+            .consultation_inputs{
+                margin-top: 60px;
+                .label_phone,
+                input,
+                button{
+                    width: 48%;
+                }
+            }
+        }
+    }
+    .gallery_main_info{
+        p{
+            font-weight: 300;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            background: url(../img/gallery/p-plus.svg) no-repeat 0 30%;
+        }
+    }
+    .gallery_main_photos{
+        width: 800px;
+        &_big{
+            width: 100%;
+            height: 530px;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+        &_small{
+            width: 750px;
+            margin: 0 auto;
+            padding: 30px 40px;
+            border: 2px solid $yellow;
+            margin-top: -3px;
+            display: flex;
+            justify-content: space-between;
+            .small_photo{
+                width: 121px;
+                height: 121px;
+                overflow: hidden;
+                img{
+                    height: 100%;
+                    width: auto;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
 }
 
 form{
@@ -1520,6 +1597,19 @@ footer{
             margin-top: 25px;
         }
     }
+    .gallery{
+        .gallery_main{
+            padding: 60px 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            &_photos,
+            &_text{
+                width: 90%;
+                margin: 30px 0;
+            }
+        }
+    }
 }
 
 @media(max-width: 1150px){
@@ -1640,6 +1730,11 @@ footer{
         margin-top: 40px;
         width: 100% !important;
     }
+    .gallery{
+        .gallery_main_photos_small{
+            width: 100%;
+        }
+    }
 }
 
 @media(max-width: 850px){
@@ -1656,6 +1751,21 @@ footer{
     .addres_content_wrap{
         .content{
             padding: 40px;
+        }
+    }
+    .gallery{
+        &_main_photos,
+        &_main_text{
+            width: 100% !important;
+            .gallery_main_photos_big{
+                height: 400px;
+            }
+            .gallery_main_photos_small{
+                padding: 10px;
+            }
+            .small_photo{
+                margin: 5px;
+            }
         }
     }
 }
@@ -1715,6 +1825,9 @@ footer{
             }
         }
     }
+    .type_list{
+        display: none;
+    }
 }
 
 @media(max-width: 670px){
@@ -1754,6 +1867,17 @@ footer{
         .consultation_inputs_item2{
             width: 100%;
             margin-left: 0;
+        }
+        .consultation_inputs{
+            .label_phone,
+            input,
+            button{
+                width: 100% !important;
+            }
+            input{
+                margin: 0;
+                padding-left: 80px;
+            }
         }
     }
 }
@@ -1877,7 +2001,16 @@ footer{
     .gallery_infrastructure_info{
         padding: 40px 30px !important;
     }
-
+    .gallery{
+        .gallery_main_photos{
+            .gallery_main_photos_big{
+                height: 300px !important;
+            }
+            .small_photo{
+                height: 70px;
+            }
+        }
+    }
 }
 
 @media(max-width: 450px){
@@ -1890,6 +2023,32 @@ footer{
     .gallery{
         .gallery_comment_content{
             padding: 40px 20px;
+        }
+    }
+    .page_number{
+        margin: 30px auto 50px;
+    }
+    .gallery{
+        .gallery_comment,
+        .gallery_main,
+        .gallery_infrastructure {
+            padding: 30px 0;
+        }
+        .gallery_main_text{
+            h2{
+                font-size: 1.5em;
+            }
+        }
+        .gallery_main_photos{
+            .gallery_main_photos_small{
+                padding: 0;
+            }
+            .gallery_main_photos_big{
+                height: 200px !important;
+            }
+            .small_photo{
+                height: 60px;
+            }
         }
     }
 }

@@ -37,11 +37,38 @@ a{
 
 // header
 
-header{
+.over_header{
+    text-align: center;
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    padding: 10px 0 20px 0;
+    line-height: 200%;
+    border-bottom: 1px solid grey;
+    z-index: 1;
+    transition: .2s;
+    font-size: calc(14px + 6*(100vw / 1600));
+}
+
+.header{
     width: 100%;
     height: auto;
     position: relative;
     padding-top: 5px;
+    background-color: transparent;
+    position: fixed;
+    transition: .3s;
+    padding-top: 70px;
+    // z-index: 3;
+}
+
+.mob_menu_body{
+    z-index: 10;
+}
+
+.header_black{
+    background-color: #000;
+    padding-bottom: 10px;
 }
 
 .header_body{
@@ -73,6 +100,13 @@ header{
         a{
             padding: 10px 3px;
         }
+    }
+}
+
+.over_header.over_header_hidden{
+    transform: translateY(-60px);
+    + .header{
+        transform: translateY(-60px);
     }
 }
 
@@ -202,7 +236,7 @@ h1{
 .intro_cover{
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.6)
 }
 
 .intro{
@@ -210,20 +244,20 @@ h1{
     width: 100%;
     background: url(../img/bg.png) no-repeat top/cover;
     .container{
-        height: 88%;
+        height: 95%;
     }
 }
 
 .intro_body{
     width: 100%;
-    height: 88%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width: 950px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 90px 40px 0;
     p{
         margin: 30px 0;
         font-weight: 300;
@@ -371,6 +405,12 @@ h1{
     justify-content: center;
 }
 
+.page_content{
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+}
+
 
 @media(max-width: 1024px){
     .social{
@@ -408,7 +448,7 @@ h1{
         display: none;
     }
     h1{
-        margin-bottom: 16vh;
+        margin-bottom: 12vh;
     }
     .intro{
         background: url(../img/bg-adaptive.png) no-repeat top/cover;
@@ -430,6 +470,12 @@ h1{
     }
     .mob_menu{
         display: block;
+    }
+    .over_header{
+        display: none;
+    }
+    .header{
+        padding-top: 10px;
     }
 }
 
@@ -479,6 +525,9 @@ h1{
             display: none;
         }
     }
+    .header_black{
+        padding-bottom: 0;
+    }
 }
 
 @media(max-width: 500px){
@@ -524,7 +573,7 @@ h1{
 
 @media(orientation: landscape) and (max-width: 850px){
     .intro {
-        min-height: 630px;
+        min-height: 700px;
         overflow: auto;
     }
     h1{
@@ -533,9 +582,16 @@ h1{
     }
 }
 
+@media(orientation: landscape) and (max-width: 900px){
+    .over_header{display: none;}
+    .header{
+        padding-top: 10px;
+    }
+}
+
 @media(orientation: landscape) and (max-width: 700px){
     .intro {
-        min-height: 510px;
+        min-height: 460px;
         overflow: auto;
     }
     h1{

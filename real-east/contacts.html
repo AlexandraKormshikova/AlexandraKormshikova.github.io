@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contacts">
+    <div class="container">
+        <div class="search1_intro">
+            <div class="header">
+                <div class="header_main">
+                    <div class="header_logo">
+                        <a href="intro.html">
+                            <svg width="93" height="50" viewBox="0 0 93 50">
+                            <rect width="93" height="50" fill="url(#pattern0)"/>
+                            <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(-0.00104149) scale(0.00281484 0.0052356)"/>
+                            </pattern>
+                            <image id="image0" width="356" height="191" xlink:href="data:image/png;base64,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"/>
+                            </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <ul class="header_nav">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Наши усулуги</a></li>
+                        <li><a href="#">Каталог недвижимости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Полезная информация</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+                <div class="header_contacts">
+                    <a href="tel:+90 507 160 74 14">+90 507 160 74 14</a>
+                    <a href="tel:8 800 775 48 24">8 800 775 48 24</a>
+                    <a href="#" class="uppercase yellow">Заказать звонок</a>
+                </div>
+                <div class="header_login">
+                    <a href="#">
+                        <svg width="27" height="32" viewBox="0 0 27 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13.5" cy="7.5" r="7.5"/>
+                        <path d="M27 27.6508C27 32 20.9558 32 13.5 32C6.04416 32 0 32 0 27.6508C0 23.3015 6.04416 16.25 13.5 16.25C20.9558 16.25 27 23.3015 27 27.6508Z"/>
+                        </svg><br>
+                        <span class="uppercase">Login</span>
+                    </a>
+                </div>
+
+                <div class="mob_menu" id="mob_menu">
+                    <div class="mob_menu_lines"></div>
+                </div>
+            </div>
+
+            <div class="header_mob none" id="header_mob">
+                <div class="mob_header_login">
+                    <a href="#">
+                        <svg width="27" height="32" viewBox="0 0 27 32" fill="#FECA36">
+                        <circle cx="13.5" cy="7.5" r="7.5"/>
+                        <path d="M27 27.6508C27 32 20.9558 32 13.5 32C6.04416 32 0 32 0 27.6508C0 23.3015 6.04416 16.25 13.5 16.25C20.9558 16.25 27 23.3015 27 27.6508Z" fill="#FECA36"/>
+                        </svg><br>
+                        <span class="uppercase">Login</span>
+                    </a>
+                </div>
+                <div class="header_mob_contacts">
+                    <a href="#" class="uppercase yellow">Заказать звонок</a>
+                </div>
+            <ul class="header_nav_mob">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Наши усулуги</a></li>
+                <li><a href="#">Каталог недвижимости</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Полезная информация</a></li>
+                <li><a href="#">Отзывы</a></li>
+            </ul>
+            <div class="mob_intro_icons">
+                <div class="intro_icons_social">
+                    <a href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25">
+                        <path d="M13.4125 8.59375V9.24375H14.0625H17.7899L16.7474 11.85H14.0625H13.4125V12.5V24.35H10.025V12.5V11.85H9.375H6.9V9.24375H9.375H10.025V8.59375V4.6875C10.025 2.45742 11.8324 0.65 14.0625 0.65H16.5375V3.25625H15.625C14.4035 3.25625 13.4125 4.24726 13.4125 5.46875V8.59375Z"/>
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <g clip-path="url(#clip0)">
+                        <path d="M16.348 11.3766L10.8249 8.35459C10.5073 8.18083 10.132 8.18731 9.82071 8.37175C9.50924 8.55639 9.32346 8.88254 9.32346 9.24456V15.2367C9.32346 15.597 9.50809 15.9226 9.81746 16.1074C9.97902 16.2039 10.1581 16.2524 10.3376 16.2524C10.502 16.2524 10.6668 16.2117 10.8184 16.1301L16.3417 13.1602C16.6696 12.9837 16.8742 12.6429 16.8758 12.2704C16.8771 11.8979 16.6749 11.5555 16.348 11.3766ZM10.7885 14.4829V10.0044L14.9164 12.2631L10.7885 14.4829Z"/>
+                        <path d="M24.816 7.49645L24.8149 7.48501C24.7937 7.28378 24.583 5.49393 23.7128 4.58355C22.7071 3.51276 21.5669 3.38268 21.0185 3.32031C20.9731 3.31516 20.9315 3.31039 20.8944 3.30544L20.8507 3.30086C17.5456 3.06053 12.5543 3.02773 12.5043 3.02753L12.5 3.02734L12.4956 3.02753C12.4456 3.02773 7.45427 3.06053 4.11948 3.30086L4.07542 3.30544C4.03994 3.3102 4.00084 3.31459 3.9583 3.31955C3.41624 3.38211 2.28824 3.51238 1.27964 4.62189C0.450895 5.52254 0.211333 7.27406 0.186729 7.47089L0.183868 7.49645C0.176429 7.58018 0 9.57355 0 11.5747V13.4455C0 15.4467 0.176429 17.44 0.183868 17.524L0.185203 17.5365C0.206374 17.7345 0.416945 19.4916 1.28307 20.4023C2.22873 21.4373 3.42444 21.5742 4.0676 21.6478C4.16926 21.6595 4.2568 21.6694 4.3165 21.6799L4.3743 21.6879C6.28259 21.8695 12.2657 21.9589 12.5194 21.9625L12.527 21.9627L12.5347 21.9625C12.5846 21.9624 17.5758 21.9296 20.8808 21.6892L20.9245 21.6846C20.9663 21.6791 21.0132 21.6742 21.0647 21.6688C21.6037 21.6116 22.7256 21.4928 23.7203 20.3983C24.549 19.4975 24.7888 17.746 24.8132 17.5493L24.816 17.5238C24.8235 17.4398 25.0001 15.4467 25.0001 13.4455V11.5747C24.9999 9.57355 24.8235 7.58038 24.816 7.49645ZM23.5349 13.4455C23.5349 15.2977 23.3731 17.2052 23.3579 17.3803C23.2957 17.8627 23.043 18.9709 22.6392 19.4098C22.0166 20.0947 21.3771 20.1626 20.9102 20.212C20.8537 20.2179 20.8015 20.2236 20.7542 20.2295C17.5575 20.4607 12.7546 20.4962 12.5333 20.4975C12.2852 20.4939 6.38959 20.4037 4.53947 20.2318C4.44468 20.2164 4.34225 20.2045 4.2343 20.1923C3.6867 20.1296 2.93711 20.0438 2.36072 19.4098L2.34717 19.3953C1.95045 18.9819 1.70497 17.9457 1.6426 17.3861C1.63097 17.2537 1.46503 15.3236 1.46503 13.4455V11.5747C1.46503 9.72462 1.62639 7.81918 1.64203 7.64046C1.71623 7.07226 1.97372 6.03123 2.36072 5.61047C3.00235 4.90475 3.67888 4.82655 4.12634 4.77486C4.16907 4.7699 4.20893 4.76532 4.24574 4.76055C7.48898 4.52824 12.3264 4.49371 12.5 4.49238C12.6735 4.49352 17.5092 4.52824 20.7236 4.76055C20.7631 4.76551 20.8062 4.77047 20.8526 4.77581C21.3128 4.82826 22.0084 4.90761 22.6468 5.58853L22.6527 5.59483C23.0495 6.00815 23.2949 7.06253 23.3573 7.6334C23.3684 7.75833 23.5349 9.69257 23.5349 11.5747V13.4455Z"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0">
+                        <rect width="25" height="25"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </a>
+
+                    <a href="#">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="#fff">
+                        <path d="M18.2327 0H6.76726C3.03573 0 0 3.03573 0 6.76726V18.2329C0 21.9642 3.03573 25 6.76726 25H18.2329C21.9642 25 25 21.9642 25 18.2329V6.76726C25 3.03573 21.9642 0 18.2327 0V0ZM23.5343 18.2329C23.5343 21.1561 21.1561 23.5343 18.2327 23.5343H6.76726C3.84387 23.5343 1.4656 21.1561 1.4656 18.2329V6.76726C1.4656 3.84387 3.84387 1.4656 6.76726 1.4656H18.2329C21.1561 1.4656 23.5343 3.84387 23.5343 6.76726V18.2329Z"/>
+                        <path d="M12.5 5.66425C8.73068 5.66425 5.66425 8.73068 5.66425 12.5C5.66425 16.2693 8.73068 19.3357 12.5 19.3357C16.2693 19.3357 19.3357 16.2693 19.3357 12.5C19.3357 8.73068 16.2693 5.66425 12.5 5.66425ZM12.5 17.8701C9.53902 17.8701 7.12985 15.4611 7.12985 12.5C7.12985 9.53902 9.53902 7.12985 12.5 7.12985C15.4611 7.12985 17.8701 9.53902 17.8701 12.5C17.8701 15.4611 15.4611 17.8701 12.5 17.8701Z"/>
+                        <path d="M19.4992 3.23657C18.3853 3.23657 17.4793 4.14275 17.4793 5.25645C17.4793 6.37034 18.3853 7.27652 19.4992 7.27652C20.6131 7.27652 21.5192 6.37034 21.5192 5.25645C21.5192 4.14256 20.6131 3.23657 19.4992 3.23657ZM19.4992 5.81072C19.1936 5.81072 18.9449 5.56201 18.9449 5.25645C18.9449 4.9507 19.1936 4.70218 19.4992 4.70218C19.8049 4.70218 20.0536 4.9507 20.0536 5.25645C20.0536 5.56201 19.8049 5.81072 19.4992 5.81072Z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="intro_icons_language">
+                    <div class="selected_language">
+                        <p>ru</p>
+                    </div>
+                    <div>
+                        <p>ar</p>
+                    </div>
+                    <div>
+                        <p>fas</p>
+                    </div>
+                    <div>
+                        <p>en</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contacts_body">
+        <div class="container">
+            <h1>Контакты</h1>
+            <div class="contacts_body_maps">
+                <p class="yellow">Адрес офисa Real East в Стамбуле:</p>
+                <p>MEVLANA MAHALLESI, SULTAN AHMET CAD, Delta Plaza, Blok B1,  No D 20</p>
+                <div class="contacts_body_maps_content">
+                    <div class="contact_map_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8153.955754326569!2d37.67499704821093!3d55.579000570173854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1593525366173!5m2!1sru!2sru" frameborder="0" allowfullscreen=""></iframe>
+                        <button type="button" name="button">Как добраться?</button>
+                    </div>
+                    <div class="contact_map_info">
+                        <div class="contact_map_info_mail">
+                            <h3>E-mail:</h3>
+                            <p><a href="tel: +90 212 853 43 99">info@realeast.su</a></p>
+                        </div>
+                        <div class="contact_map_info_facebook">
+                            <h3>Мы в Facebook:</h3>
+                            <p><a href="https://www.facebook.com/nedvijimostvstambule">https://www.facebook.com/nedvijimostvstambule</a></p>
+                        </div>
+                        <div class="contact_map_info_phone-ru">
+                            <h3>Телефон в России:</h3>
+                            <p><a href="tel: +7 (925) 408-81-47">+7 (925) 408-81-47</a></p>
+                        </div>
+                        <div class="contact_map_info_phone-tur">
+                            <h3>Телефон в Турции:</h3>
+                            <p><a href="tel: +90 212 853 43 99">+90 212 853 43 99</a> тел</p>
+                            <p><a href="tel: +90 212 853 43 98">+90 212 853 43 98</a> факс</p>
+                            <p><a href="tel: +90 507 160 74 14">+90 507 160 74 14</a> сотовый</p>
+                        </div>
+                        <div class="contact_map_info_phones">
+                            <h3>WhatsApp/Viber:</h3>
+                            <p><a href="tel: +90 507 160 74 14">+90 507 160 74 14</a></p>
+                        </div>
+                        <div class="contact_map_info_skype">
+                            <h3>Skype:</h3>
+                            <p><a href="#">Zamir-21</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contacts_body_maps">
+                <p class="yellow">Адрес офисa Real East в Украине:</p>
+                <p>Одесса. Пр. Шевченко, 8</p>
+                <div class="contacts_body_maps_content">
+                    <div class="contact_map_map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8153.955754326569!2d37.67499704821093!3d55.579000570173854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1593525366173!5m2!1sru!2sru" frameborder="0" allowfullscreen=""></iframe>
+                        <button type="button" name="button">Как добраться?</button>
+                    </div>
+                    <div class="contact_map_info">
+                        <div class="contact_map_info_phone-tur contact_map_info_phone-tur_center">
+                            <h3>Телефон:</h3>
+                            <p><a href="tel: +38-096-0-900-900">+90 212 853 43 99</a> Бербер Ирина Васильевна. АН "Александр-Н"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer_body">
+                <div class="footer_body_logo">
+                    <svg width="132" height="71" viewBox="0 0 132 71" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="132" height="71" fill="url(#pattern0)"/>
+                    <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0" transform="translate(-0.00126924) scale(0.00281612 0.0052356)"/>
+                    </pattern>
+                    <image id="image0" width="356" height="191" xlink:href="data:image/png;base64,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"/>
+                    </defs>
+                    </svg>
+                </div>
+                <div class="footer_body_turk">
+                    <h3>Турция <br>(Стамбул)</h3>
+                    <div class="footer_body_turk_body">
+                        <div class="footer_body_turk_body_item">
+                            <p>Телефон:</p>
+                            <p><a href="tel:+90 212 853 43 99">+90 212 853 43 99</a></p>
+                            <p><a href="tel:+90 212 853 43 98">+90 212 853 43 98</a></p>
+                            <p><a href="tel:+90 507 160 74 14">+90 507 160 74 14</a></p>
+                        </div>
+                        <div class="footer_body_turk_body_item">
+                            <p>Телефон в Росии:</p>
+                            <p><a href="tel: +7 (925) 408-81-47">+7 (925) 408-81-47</a></p>
+                        </div>
+                        <div class="footer_body_turk_body_item">
+                            <p>E-mail:</p>
+                            <p><a href="#">info@realeast.su</a></p>
+                        </div>
+                        <div class="footer_body_turk_body_item">
+                            <p>Адрес:</p>
+                            <p>MEVLANA MAHALLESI, SULTAN AHMET <br>CAD, Delta Plaza, Blok B1, No D 20</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_body_ukr">
+                    <h3>Украина <br>(Одесса)</h3>
+                    <div class="footer_body_ukr_body">
+                        <div class="footer_body_ukr_body_item">
+                            <p>Телефон:</p>
+                            <a href="tel:+38-096-0-900-900">+38-096-0-900-900</a>
+                        </div>
+                        <div class="footer_body_ukr_body_item">
+                            <p>E-mail:</p>
+                            <p><a href="#">(не указан)</a></p>
+                        </div>
+                        <div class="footer_body_ukr_body_item">
+                            <p>Адрес:</p>
+                            <p>Бербер Ирина Васильевна. АН <br>"Александр-Н". Одесса. Пр. Шевченко, 8 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="js/style.js"></script>
+</body>
+</html>

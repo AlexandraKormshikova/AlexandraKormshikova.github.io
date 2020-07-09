@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Real East</title>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/fonts.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
 </head>
-<body>
+<body class="index">
     <section class="intro">
             <div class="container">
                 <!-- header -->
@@ -377,52 +377,42 @@
         </div>
     </section>
 
-    <section class="districts">
-        <div class="container">
-            <div class="districts_content">
-                <div class="districts_gallery districts_content_item">
-                    <div class="districts_gallery_img">
-                        <img src="img/index/district.png" alt="">
-                    </div>
-                    <div class="districts_gallery_pict">
-                        <img src="img/index/district-small1.png" alt="">
-                        <img src="img/index/district-small2.png" alt="">
-                    </div>
-                </div>
-                <div class="districts_text districts_content_item">
-                    <h2>РАЙОНЫ СТАМБУЛА</h2>
-                    <h3>Arnavutköy</h3>
-                    <p>Точное время основания города неизвестно, но источники и карты уже в 1850-х годах используют название Арнавуткёй для местности, где сейчас располагается город. Название города происходит от арнаутов и означает «арнаутская деревня»</p>
-                    <a href="#" class="dist_a">Получить видеообзор всех районов</a>
-                    <div class="districts_content_buttons">
-                        <a href="#" class="districts_content_button district_button_prev button_hover">ПРЕДЫДУЩИЙ</a>
-                        <a href="#" class="districts_content_button district_button_next button_hover">СЛЕДУЮЩИЙ</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- NOTE: districts -->
 
     <section class="services">
         <div class="container">
             <div class="services_body">
                 <h2>НАШИ УСЛУГИ</h2>
-                <div class="services_slider">
-                    <div class="services_slider_item services-phone">
-                        <h3>Консалтинг</h3>
-                        <p>Наши специалисты предоставляют консультации по всем финансовым, юридическим и другим вопросам, осуществляют экспертную оценку объектов.</p>
-                    </div>
-                    <div class="services_slider_item services-search">
-                        <h3>Подбор обьектов</h3>
-                        <p>Наши инвесторы могут купить проект, на любом этапе строительства или приобрести уже готовую недвижимость.</p>
-                    </div>
-                    <div class="services_slider_item services-land">
-                        <h3>Подбор земельных участков</h3>
-                        <p>Помощь в подборе земельных участков по самым выгодным ценам. Экспертная оценка земли.</p>
-                    </div>
-                    <div class="services_slider_nav">
-                        <div class="arrow_back active"></div>
-                        <div class="arrow_next"></div>
+                <div class="services-slider-container">
+                    <div class="services_slider">
+                        <div class="services_slider_wrap">
+                            <div class="services_slider_item services-phone">
+                                <h3>Консалтинг</h3>
+                                <p>Наши специалисты предоставляют консультации по всем финансовым, юридическим и другим вопросам, осуществляют экспертную оценку объектов.</p>
+                            </div>
+                            <div class="services_slider_item services-search">
+                                <h3>Подбор обьектов</h3>
+                                <p>Наши инвесторы могут купить проект, на любом этапе строительства или приобрести уже готовую недвижимость.</p>
+                            </div>
+                            <div class="services_slider_item services-land">
+                                <h3>Подбор земельных участков</h3>
+                                <p>Помощь в подборе земельных участков по самым выгодным ценам. Экспертная оценка земли.</p>
+                            </div>
+                        </div>
+                        <div class="services_slider_wrap">
+                            <div class="services_slider_item services-phone">
+                                <h3>Консалтинг</h3>
+                                <p>Наши специалисты предоставляют консультации по всем финансовым, юридическим и другим вопросам, осуществляют экспертную оценку объектов.</p>
+                            </div>
+                            <div class="services_slider_item services-search">
+                                <h3>Подбор обьектов</h3>
+                                <p>Наши инвесторы могут купить проект, на любом этапе строительства или приобрести уже готовую недвижимость.</p>
+                            </div>
+                            <div class="services_slider_item services-land">
+                                <h3>Подбор земельных участков</h3>
+                                <p>Помощь в подборе земельных участков по самым выгодным ценам. Экспертная оценка земли.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -608,5 +598,18 @@
     </footer>
 
 <script src="js/style.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/slick.min.js"></script>
+<!-- <script src="js/slider.js"></script> -->
+<script>
+$(document).ready(function(){
+    $('.services_slider').slick({
+        infinite: false, // бесконечная прокрутка слайдов
+        dots: true,
+        appendArrows: $('.services_slider_buttons'),
+    });
+});
+
+</script>
 </body>
 </html>

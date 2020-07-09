@@ -302,29 +302,33 @@ svg:hover{
     z-index: 11;
 }
 
+.mob_menu_lines,
+.mob_menu_lines:after,
+.mob_menu_lines:before{
+    background-color: #808080;
+}
+
 .mob_menu_lines{
     position: absolute;
     width: 35px;
     height: 2px;
-    background-color: #fff;
 }
 
 .mob_menu_lines:after,
 .mob_menu_lines:before{
     position: absolute;
     content: '';
-    background-color: #fff;
     width: 100%;
     height: 2px;
     top: 10px;
     left: 0;
 }
 
-.gallery{
+.index{
     .mob_menu_lines,
     .mob_menu_lines:after,
     .mob_menu_lines:before{
-        background-color: #808080;
+        background-color: #fff;
     }
 }
 
@@ -683,133 +687,6 @@ svg:hover{
 
 /* districts */
 
-.districts{
-    width: 100%;
-    height: auto;
-    padding: 80px 0;
-}
-
-.districts_content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.districts_content_item{
-    width: 50%;
-}
-
-.districts_text{
-    text-align: right;
-    width: 45%;
-    p{
-        margin-bottom: 10px;
-    }
-    .dist_a{
-        color: $yellow;
-        position: relative;
-        padding-right: 15px;
-    }
-    .dist_a:hover{
-        text-decoration: underline;
-    }
-    .dist_a:after{
-        position: absolute;
-        content: '';
-        width: 10px;
-        height: 10px;
-        border: 2px solid $yellow;
-        transform: rotate(45deg);
-        border-bottom: 0;
-        border-left: 0;
-        top: 40%;
-    }
-    h2{
-        text-align: right;
-        margin-bottom: 75px;
-    }
-}
-
-.districts_content_buttons{
-    margin-top: 70px;
-}
-
-.districts_content_button{
-    display: inline-block;
-    width: 288px;
-    text-align: center;
-    padding: 35px 0;
-    font-weight: 600;
-    margin: 10px;
-    position: relative;
-}
-
-.district_button_prev{
-    background-color: #fff;
-    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
-}
-
-.district_button_next{
-    background: $yellow;
-    box-shadow: 0px 15px 50px rgba(254, 202, 54, 0.5);
-}
-
-.district_button_prev:after{
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 3px;
-    left: 55px;
-    top: 48%;
-    transform: rotate(45deg);
-    border: 3px solid #000;
-    border-right: 3px solid transparent;
-    border-top: 3px solid transparent;
-}
-
-.district_button_next:after{
-    position: absolute;
-    content: '';
-    width: 3px;
-    height: 3px;
-    right: 55px;
-    top: 48%;
-    transform: rotate(45deg);
-    border: 3px solid #000;
-    border-left: 3px solid transparent;
-    border-bottom: 3px solid transparent;
-}
-
-.districts_gallery{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.districts_gallery_img{
-    max-width: 510px;
-    height: auto;
-    box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.25);
-    img{
-        width: 100%;
-        height: auto;
-    }
-}
-
-.districts_gallery_pict{
-    border: 2px solid $yellow;
-    padding: 60px 35px;
-    width: 300px;
-    border-left: 0;
-}
-
-.districts_gallery_pict{
-    img{
-        width: 180px;
-        height: 120px;
-        margin: 5px;
-    }
-}
 
 /* services */
 
@@ -828,9 +705,9 @@ svg:hover{
 
 .services_slider{
     background-color: #fff;
-    padding: 66px 75px;
     max-width: 767px;
     margin-top: 90px;
+    position: relative;
 }
 
 .services_slider_item{
@@ -843,6 +720,55 @@ svg:hover{
 .services_slider_item.services-search{
     background: url(../img/index/icons/services-search.svg) 0 50% no-repeat;
 }
+
+
+.slick-track{
+    max-width: 100%;
+    display: flex;
+}
+
+.services_slider {
+    overflow: hidden;
+}
+
+.services_slider_buttons{
+    // background-color: grey;
+    margin-top: -80px;
+    position: absolute;
+}
+
+.services_slider_button{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    border: 1px solid $yellow;
+}
+
+.services{
+    .slick-slide{
+        min-width: 80%;
+        margin: 75px 66px 0 75px;
+    }
+    .slick-dots li[class="slick-active"] button {
+        background: $yellow;
+    }
+    .slick-dots{
+        position: relative;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    .slick-dots button{
+        width: 12px;
+        height: 12px;
+        background-color: $grey;
+        font-size: 0px;
+        margin: 5px;
+    }
+}
+
 
 .services_slider_item.services-land{
     background: url(../img/index/icons/services-land.svg) 0 50% no-repeat;
@@ -1461,6 +1387,91 @@ form{
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* contacts.html */
+
+.contacts{
+    h1{
+        font-size: 2.55em;
+        color: #464646;
+    }
+    p{
+        font-weight: 300;
+    }
+    &_body{
+        width: 100%;
+        height: auto;
+        padding: 70px 0 100px;
+        font-size: 1.2em;
+        .yellow{
+            font-size: 1.6em;
+            margin: 30px 0;
+            line-height: 110%;
+        }
+    }
+    &_body_maps_content{
+        display: flex;
+        justify-content: space-between;
+        margin: 25px 0 70px;
+    }
+    .contact_map_map{
+        width: 57%;
+        height: 670px;
+        position: relative;
+        iframe{
+            border: 0;
+            width: 100%;
+            height: 100%;
+        }
+        button{
+            position: absolute;
+            bottom: 23px;
+            right: 60px;
+            background-color: $yellow;
+            padding: 21px 32px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #464646;
+        }
+    }
+    .contact_map_info{
+        margin-left: 30px;
+        width: 41%;
+        box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.15);
+        padding: 66px;
+        height: auto;
+        div{
+            margin-bottom: 22px;
+            padding-left: 120px;
+            word-wrap: break-word;
+        }
+        h3{
+            margin-bottom: 7px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.contact_map_info_mail{
+    background: url(../img/contacts/mail.svg) no-repeat 60px center;
+}
+.contact_map_info_facebook{
+    background: url(../img/contacts/facebook.svg) no-repeat 60px center;
+}
+.contact_map_info_phone-ru,
+.contact_map_info_phone-tur{
+    background: url(../img/contacts/phone-call.svg) no-repeat 60px center;
+}
+.contact_map_info_phones{
+    background: url(../img/contacts/whatsapp.svg) no-repeat 60px center,
+    url(../img/contacts/viber.svg) no-repeat 10px center;
+}
+.contact_map_info_skype{
+    background: url(../img/contacts/skype.svg) no-repeat 60px center;
+}
+.contact_map_info_phone-tur_center{
+    margin: 200px 0;
+}
 
 
 
@@ -1610,6 +1621,20 @@ footer{
             }
         }
     }
+    .contacts{
+        .contacts_body_maps_content{
+            align-items: center;
+        }
+        .contact_map_info{
+            padding: 30px;
+            div{
+                padding-left: 100px;
+            }
+        }
+    }
+    .contact_map_info_phone-tur_center{
+        margin: 0;
+    }
 }
 
 @media(max-width: 1150px){
@@ -1735,6 +1760,24 @@ footer{
             width: 100%;
         }
     }
+    .contacts{
+        .contacts_body_maps_content{
+            flex-direction: column;
+            .contact_map_map{
+                width: 100%;
+                height: 70vw;
+            }
+            .contact_map_info{
+                margin-left: 0;
+                margin-top: 30px;
+                width: 100%;
+                div{
+                    margin: 0;
+                    padding: 15px 0 15px 120px;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 850px){
@@ -1831,6 +1874,9 @@ footer{
 }
 
 @media(max-width: 670px){
+    .services .slick-slide{
+        margin: 40px 30px 0 12vw;
+    }
     .popular_cards_item{
         width: 100%;
         margin: 7px 7px 20px;
@@ -1959,7 +2005,7 @@ footer{
         height: auto;
     }
     .services_slider{
-        padding: 40px 30px;
+
     }
     .services_slider_item{
         margin-bottom: 40px;
@@ -2048,6 +2094,35 @@ footer{
             }
             .small_photo{
                 height: 60px;
+            }
+        }
+    }
+    .contact_map_info_mail{
+        background: url(../img/contacts/mail.svg) no-repeat 0 center;
+    }
+    .contact_map_info_facebook{
+        background: url(../img/contacts/facebook.svg) no-repeat 0 center;
+    }
+    .contact_map_info_phone-ru,
+    .contact_map_info_phone-tur{
+        background: url(../img/contacts/phone-call.svg) no-repeat 0 center;
+    }
+    .contact_map_info_phones{
+        background: url(../img/contacts/whatsapp.svg) no-repeat 0 top,
+        url(../img/contacts/viber.svg) no-repeat 0 bottom;
+    }
+    .contact_map_info_skype{
+        background: url(../img/contacts/skype.svg) no-repeat 0 center;
+    }
+    .contacts{
+        .contacts_body_maps_content{
+            .contact_map_info{
+                div{
+                    padding-left: 50px;
+                    h3{
+                        word-wrap: normal;
+                    }
+                }
             }
         }
     }

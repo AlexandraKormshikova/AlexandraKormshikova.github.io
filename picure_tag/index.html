@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+        <title>Tag picture</title>
+</head>
+<body>
+    <!-- <img srcset="images/400.jpg" 400w,
+            images/800.jpg 800w,
+            images/1600.jpg 1600w"
+        sizes="(max-width: 600px) 100wh, 50wh"
+        src="images/400.jpg"> -->
+
+    <!-- <picture>
+        <source srcset="images/400.jpg" media="(min-width: 600px) 50vw">
+        <img src="images/800.jpg" alt="MDN">
+    </picture> -->
+
+
+    <picture>
+    	<!-- <source
+    		media="(min-width: 1280px)"
+    		sizes="50vw"
+    		srcset="images/400.jpg 400w,
+    				images/800.jpg 800w,
+    				images/1600.jpg 1600w"> -->
+    	<img
+    		src="images/400.jpg" alt="The Oslo Opera House"
+    		sizes="(min-width: 640px) 50vw, 100vw"
+    		srcset="images/400.jpg 400w,
+    				images/800.jpg 800w,
+    				images/1600.jpg 1280w">
+    </picture>
+    <!-- <img
+       src="images/400.jpg"
+       srcset="images/400.jpg 400w,
+               images/800.jpg 800w,
+               images/1600.jpg 1200w"
+       sizes="(max-width: 800px) 100vw, 50vw"
+        src="images/400.jpg"> -->
+
+        <!-- <picture>
+            <source srcset="images/400.jpg 400w,
+                    images/800.jpg 800w,
+                    images/1600.jpg 1200w"
+                    media="(min-width: 600px) 50vw, 100vw">
+            <img src="images/800.jpg" alt="MDN">
+        </picture> -->
+
+    <!-- <img srcset="images/400.jpg 400w,
+             images/800.jpg 800w,
+             images/1600.jpg 1600w"
+     sizes="(max-width: 600px) 100vw, 50vw"
+     src="images/400.jpg" alt="Elva dressed as a fairy"> -->
+</body>
+</html>
